@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
+import { DropdownMenu, DropdownToggle } from "@trendmicro/react-dropdown";
 
 import HeartLogo from "../assets/heart.jpeg";
 import "./navbar.css";

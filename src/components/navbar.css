@@ -67,7 +67,7 @@ body {
 }
 
 .nav-elements ul li:not(:last-child) {
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 .nav-elements ul a {
@@ -114,6 +114,7 @@ body {
     height: calc(100vh - 60px);
     transition: all 0.4s ease-in;
     overflow: hidden;
+    opacity: 80%;
   }
 
   .nav-elements.active {

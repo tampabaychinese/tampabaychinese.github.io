@@ -13,38 +13,51 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="container">
-        <div className="logo">
-          <img src={HeartLogo} className="heart-img" />
-          <Link to="/" className="tcbc-title">
-            Tampa bay Chinese Baptist Church
-          </Link>
+    <div>
+      <nav className="navbar">
+        <div className="container">
+          <div className="logo">
+            <img src={HeartLogo} className="heart-img" />
+            <Link to="/" className="tcbc-title">
+              Tampa bay Chinese Baptist Church
+            </Link>
+          </div>
+          <div className="menu-icon" onClick={handleShowNavbar}>
+            <FaBars />
+          </div>
+          <div className={`nav-elements  ${showNavbar && "active"}`}>
+            <ul>
+              <li>
+                <Link to="/about" className="navbar-tab">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/doctrine" className="navbar-tab">
+                  Doctrine
+                </Link>
+              </li>
+              <li>
+                <Link to="/ministries" className="navbar-tab">
+                  Ministries
+                </Link>
+              </li>
+              <li>
+                <Link to="/fellowship" className="navbar-tab">
+                  Fellowship
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="navbar-tab">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <FaBars />
-        </div>
-        <div className={`nav-elements  ${showNavbar && "active"}`}>
-          <ul>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/doctrine">Doctrine</Link>
-            </li>
-            <li>
-              <Link to="/ministries">Ministries</Link>
-            </li>
-            <li>
-              <Link to="/fellowship">Fellowship</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+      <div style={{ height: "85px" }}></div>
+    </div>
   );
 };
 

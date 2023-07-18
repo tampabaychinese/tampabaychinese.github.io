@@ -1,16 +1,33 @@
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
-import { useState } from "react";
-import { DropdownMenu, DropdownToggle } from "@trendmicro/react-dropdown";
+import { FaBars, FaGlobe } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import Dropdown, { MenuItem } from "@trendmicro/react-dropdown";
+import "@trendmicro/react-buttons/dist/react-buttons.css";
+import "@trendmicro/react-dropdown/dist/react-dropdown.css";
 
 import HeartLogo from "../assets/heart.jpeg";
 import "./navbar.css";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [languageToggle, setLanguageToggle] = useState(0);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
+  };
+
+  useEffect(() => {
+    if (!window.language) {
+      window.language = "English";
+    }
+    console.log(window.language);
+  }, []);
+
+  const mapKeyToLangauge = (key) => {
+    return {
+      0: "English",
+      1: "中文版",
+    }[key];
   };
 
   return (
@@ -52,6 +69,23 @@ const Navbar = () => {
                 <Link to="/contact" className="navbar-tab">
                   Contact
                 </Link>
+              </li>
+              <li>
+                <Dropdown
+                  onSelect={(eventKey) => {
+                    setLanguageToggle(eventKey);
+                    window.language = mapKeyToLangauge(eventKey);
+                  }}
+                  autoOpen={true}
+                >
+                  <Dropdown.Toggle className="language-toggle">
+                    <FaGlobe /> {": " + mapKeyToLangauge(languageToggle)}
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <MenuItem eventKey={0}>English</MenuItem>
+                    <MenuItem eventKey={1}>中文版</MenuItem>
+                  </Dropdown.Menu>
+                </Dropdown>
               </li>
             </ul>
           </div>

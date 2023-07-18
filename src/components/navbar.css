@@ -35,6 +35,12 @@ body {
     align-items: center;
 }
 
+.language-toggle {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 .tcbc-title {
     text-decoration: none;
     color: black; 
@@ -62,8 +68,10 @@ body {
 
 .nav-elements ul {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   list-style-type: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-elements ul li:not(:last-child) {

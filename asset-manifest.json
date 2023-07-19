@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a2f991f3.css",
+    "main.js": "/static/js/main.9868a4be.js",
+    "static/js/787.0aa1d9f4.chunk.js": "/static/js/787.0aa1d9f4.chunk.js",
+    "static/media/bible-placeholder.png": "/static/media/bible-placeholder.215e9ec4c23204d6f20c.png",
+    "static/media/placeholder-image.jpg": "/static/media/placeholder-image.79dc5f7714f0c06dfa88.jpg",
+    "static/media/heart.jpeg": "/static/media/heart.81f2d81593a124031ec5.jpeg",
+    "index.html": "/index.html",
+    "main.a2f991f3.css.map": "/static/css/main.a2f991f3.css.map",
+    "main.9868a4be.js.map": "/static/js/main.9868a4be.js.map",
+    "787.0aa1d9f4.chunk.js.map": "/static/js/787.0aa1d9f4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2f991f3.css",
+    "static/js/main.9868a4be.js"
+  ]
+}

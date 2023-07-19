@@ -12,6 +12,8 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [languageToggle, setLanguageToggle] = useState(0);
 
+  const tabs = ["about", "doctrine", "ministries", "fellowship", "contact"];
+
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
@@ -45,31 +47,13 @@ const Navbar = () => {
           </div>
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>
-              <li>
-                <Link to="/about" className="navbar-tab">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/doctrine" className="navbar-tab">
-                  Doctrine
-                </Link>
-              </li>
-              <li>
-                <Link to="/ministries" className="navbar-tab">
-                  Ministries
-                </Link>
-              </li>
-              <li>
-                <Link to="/fellowship" className="navbar-tab">
-                  Fellowship
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="navbar-tab">
-                  Contact
-                </Link>
-              </li>
+              {tabs.map((x, i) => (
+                <li>
+                  <Link to={"/" + x} className="navbar-tab">
+                    {x}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Dropdown
                   onSelect={(eventKey) => {

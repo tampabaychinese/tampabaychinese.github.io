@@ -1,0 +1,35 @@
+.shortImageContainer {
+    background-image: url("../assets/placeholder-image.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center; 
+   
+    padding-top: 125px; 
+    padding-bottom: 125px; 
+}
+
+.addressContainer {
+  background-color: black;
+  color: white; 
+  padding: 35px; 
+  margin-top: auto;
+  font-size:18px; 
+  line-height: 10px; 
+}
+
+.directionsButton {
+    background-color: goldenrod;
+    border-radius: 20px;
+    color:black; 
+    border: none; 
+    padding: 10px; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    font-weight: 600;
+    margin-top: 20px; 
+}
+
+.officeHoursContainer {
+    background-color: #f0f0f0;
+    padding: 50px; 
+}

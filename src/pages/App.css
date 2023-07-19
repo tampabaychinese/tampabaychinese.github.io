@@ -7,6 +7,22 @@
   pointer-events: none;
 }
 
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: black;
+  color: white; 
+  padding: 35px; 
+  margin-top: auto;
+  font-size:14px; 
+  line-height: 15px; 
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

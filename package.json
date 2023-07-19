@@ -1,12 +1,13 @@
 {
+  "homepage": "https://tampabaychinese.github.io/website",
   "name": "tcbc-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.0.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@trendmicro/react-dropdown": "^1.4.0",
     "aos": "^2.3.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^5.0.0"
   }
 }

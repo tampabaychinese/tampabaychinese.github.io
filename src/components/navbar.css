@@ -29,6 +29,15 @@ body {
   z-index: 1;
 }
 
+.dropdownContent {
+  background-color: white;
+  padding:10px 20px 10px 20px; 
+  font-size: 13px; 
+  z-index: 1; 
+  box-shadow: 0 0 2px 0 rgba(0,0,0,.6);
+  border-radius: 5px;
+}
+
 .logo {
     font-weight: 900;
     font-size: 18px; 
@@ -41,6 +50,12 @@ body {
   justify-content: center;
   display: flex;
   align-items: center;
+  background-color: white;
+  padding: 7px 13px 7px 13px; 
+  border-radius: 3px;
+  border-style: none;
+  font-size: 13px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.9);
 }
 
 .tcbc-title {
@@ -113,6 +128,7 @@ body {
   .menu-icon {
     display: block;
     cursor: pointer;
+    padding-left: 20px; 
   }
 
   .nav-elements {
@@ -140,5 +156,11 @@ body {
   .nav-elements ul li {
     margin-right: unset;
     margin-top: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heart-img {
+    padding-right: 5px;
   }
 }

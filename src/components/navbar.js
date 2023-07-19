@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import { FaBars, FaGlobe } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import Dropdown, { MenuItem } from "@trendmicro/react-dropdown";
-import "@trendmicro/react-buttons/dist/react-buttons.css";
-import "@trendmicro/react-dropdown/dist/react-dropdown.css";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 import HeartLogo from "../assets/heart.jpeg";
 import "./navbar.css";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-  const [languageToggle, setLanguageToggle] = useState(0);
+  const [language, setLanguage] = useState("English");
 
   const tabs = ["about", "doctrine", "ministries", "fellowship", "contact"];
 
@@ -25,19 +23,12 @@ const Navbar = () => {
     console.log(window.language);
   }, []);
 
-  const mapKeyToLangauge = (key) => {
-    return {
-      0: "English",
-      1: "中文版",
-    }[key];
-  };
-
   return (
     <div>
       <nav className="navbar">
         <div className="container">
           <div className="logo">
-            <img src={HeartLogo} className="heart-img" />
+            <img src={HeartLogo} className="heart-img" alt="logo" />
             <Link to="/" className="tcbc-title">
               Tampa bay Chinese Baptist Church
             </Link>
@@ -47,29 +38,50 @@ const Navbar = () => {
           </div>
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>
-              {tabs.map((x, i) => (
+              {tabs.map((x, _) => (
                 <li>
-                  <Link to={"/" + x} className="navbar-tab">
+                  <Link
+                    to={"/" + x}
+                    className="navbar-tab"
+                    onClick={() => {
+                      window.scrollTo(0, 0);
+                      setShowNavbar(false);
+                    }}
+                  >
                     {x}
                   </Link>
                 </li>
               ))}
               <li>
-                <Dropdown
-                  onSelect={(eventKey) => {
-                    setLanguageToggle(eventKey);
-                    window.language = mapKeyToLangauge(eventKey);
-                  }}
-                  autoOpen={true}
-                >
-                  <Dropdown.Toggle className="language-toggle">
-                    <FaGlobe /> {": " + mapKeyToLangauge(languageToggle)}
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <MenuItem eventKey={0}>English</MenuItem>
-                    <MenuItem eventKey={1}>中文版</MenuItem>
-                  </Dropdown.Menu>
-                </Dropdown>
+                <DropdownMenu.Root>
+                  <DropdownMenu.Trigger asChild>
+                    <button className="language-toggle">
+                      <FaGlobe /> {": " + language + "  ▾"}
+                    </button>
+                  </DropdownMenu.Trigger>
+                  <DropdownMenu.Portal>
+                    <DropdownMenu.Content className="dropdownContent">
+                      <DropdownMenu.Item
+                        className="dropdownItem"
+                        onSelect={() => {
+                          setLanguage("English");
+                          window.language = "English";
+                        }}
+                      >
+                        ENGLISH
+                      </DropdownMenu.Item>
+                      <hr class="dashed"></hr>
+                      <DropdownMenu.Item
+                        onSelect={() => {
+                          setLanguage("中文版");
+                          window.language = "中文版";
+                        }}
+                      >
+                        中文版
+                      </DropdownMenu.Item>
+                    </DropdownMenu.Content>
+                  </DropdownMenu.Portal>
+                </DropdownMenu.Root>
               </li>
             </ul>
           </div>

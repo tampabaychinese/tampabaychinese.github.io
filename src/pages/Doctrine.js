@@ -14,27 +14,6 @@ const Doctrine = () => {
     "7. The authority and inerrancy of Scripture",
   ];
 
-  const CONTAINER_STYLE = {
-    position: "relative",
-    width: "100%",
-    marginTop: 60,
-    zIndex: -1,
-  };
-
-  const CARD_STYLE = {
-    width: "400px",
-    minHeight: "40px",
-    padding: "20px",
-    textAlign: "center",
-    background: "#D7BE69",
-    color: "#FFF",
-    borderRadius: "10px",
-    fontWeight: "600",
-    justifyContent: "center",
-    display: "flex",
-    alignItems: "center",
-  };
-
   return (
     <div>
       <div className="titleImageContainer">
@@ -42,11 +21,19 @@ const Doctrine = () => {
       </div>
       <div className="coreBeliefsContainer" data-aos="fade-up">
         <h3>CORE BELIEFS</h3>
-        <spacer type="vertical" size="10000" />
-        <div style={CONTAINER_STYLE}>
+        <div className="mobileCoreBeliefsCard" data-aos="fade-up">
+          <p>
+            {coreBeliefs.map((x, _) => (
+              <div>
+                {x} <br />
+              </div>
+            ))}
+          </p>
+        </div>
+        <div className="carouselContainer">
           <ReactCardCarousel autoplay={true} autoplay_speed={5000}>
             {coreBeliefs.map((x, _) => (
-              <div style={CARD_STYLE}>{x}</div>
+              <div className="coreBeliefsCard">{x}</div>
             ))}
           </ReactCardCarousel>
         </div>

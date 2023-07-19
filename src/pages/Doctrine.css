@@ -1,0 +1,41 @@
+.titleImageContainer {
+    background-image: url("../assets/bible-placeholder.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center; 
+    filter: grayscale(100%);
+    background-blend-mode:lighten;
+   
+    padding-top: 125px; 
+    padding-bottom: 125px; 
+}
+
+.coreBeliefsContainer {
+    padding-top: 50px; 
+    padding-bottom: 20px;
+    margin-bottom: 100px; 
+}
+
+.fullDoctrineContainer {
+    padding: 25px; 
+    padding-left: 10%; 
+    padding-right: 10%; 
+    background-color: #f3f3f3;
+}
+
+.fullDoctrineBody {
+    text-align: left;
+}
+
+.fullDoctrineBody p {
+    font-size: 14px;
+}
+
+.fullDoctrineBody h4 {
+    font-size: 24px; 
+}
+
+.doctrineDisclaimer {
+    margin-top: 50px;
+    color: darkred
+}

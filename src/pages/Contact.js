@@ -1,4 +1,8 @@
 import React from "react";
+
+import Facebook from "../assets/facebook-icon.png";
+import Youtube from "../assets/youtube-icon.png";
+import Email from "../assets/iemail-icon.png";
 import "./Contact.css";
 
 const Contact = () => {
@@ -25,14 +29,43 @@ const Contact = () => {
         </button>
       </div>
       <div className="officeHoursContainer">
-        <h2 data-aos="fade-left">OFFICE HOURS</h2>
+        <h2 data-aos="fade-left">CONNECT WITH US</h2>
         <div data-aos="fade-left">
-          <p>Monday to Thursday 9:00am—3:00 pm</p>
           <p>
             <b>Phone:</b> (727) 546-3057
           </p>
           <p>
-            <b>Fax:</b> (727) 546-3001
+            <b>Email:</b>{" "}
+            <a
+              className="pastorEmail"
+              onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
+            >
+              jhsieh1@tampabay.rr.com
+            </a>
+            <div>
+              <button
+                className="socialIconButton"
+                onClick={() =>
+                  window.open("https://www.facebook.com/groups/282579880948/")
+                }
+              >
+                <img src={Facebook} className="socialIcon"></img>
+              </button>
+              <button
+                className="socialIconButton"
+                onClick={() =>
+                  window.open("https://www.youtube.com/@tcbcchurch727")
+                }
+              >
+                <img src={Youtube} className="socialIcon"></img>
+              </button>
+              <button
+                className="socialIconButton"
+                onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
+              >
+                <img src={Email} className="socialIcon"></img>
+              </button>
+            </div>
           </p>
         </div>
       </div>

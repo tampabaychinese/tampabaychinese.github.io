@@ -10,7 +10,7 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [language, setLanguage] = useState("English");
 
-  const tabs = ["about", "doctrine", "ministries", "fellowship", "contact"];
+  // const tabs = ["about", "doctrine", "fellowship", "contact"];
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -38,20 +38,92 @@ const Navbar = () => {
           </div>
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>
-              {tabs.map((x, _) => (
-                <li>
-                  <Link
-                    to={"/" + x}
-                    className="navbar-tab"
-                    onClick={() => {
-                      window.scrollTo(0, 0);
-                      setShowNavbar(false);
-                    }}
-                  >
-                    {x}
-                  </Link>
-                </li>
-              ))}
+              <li className="aboutDropdown">
+                <DropdownMenu.Root>
+                  <DropdownMenu.Trigger asChild>
+                    <a className="navbar-tab">ABOUT US ▾</a>
+                  </DropdownMenu.Trigger>
+                  <DropdownMenu.Portal>
+                    <DropdownMenu.Content
+                      className="aboutDropdownContent"
+                      sideOffset={32}
+                    >
+                      <DropdownMenu.Item asChild>
+                        <Link
+                          to="/about"
+                          className="subnavbar-tab"
+                          onClick={() => {
+                            window.scrollTo(0, 0);
+                            setShowNavbar(false);
+                          }}
+                        >
+                          about TCBC
+                        </Link>
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item asChild>
+                        <Link
+                          to="/doctrine"
+                          className="subnavbar-tab"
+                          onClick={() => {
+                            window.scrollTo(0, 0);
+                            setShowNavbar(false);
+                          }}
+                        >
+                          doctrine
+                        </Link>
+                      </DropdownMenu.Item>
+                    </DropdownMenu.Content>
+                  </DropdownMenu.Portal>
+                </DropdownMenu.Root>
+              </li>
+              <li className="aboutDropdownMobile">
+                <Link
+                  to="/about"
+                  className="subnavbar-tab"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    setShowNavbar(false);
+                  }}
+                >
+                  about TCBC
+                </Link>
+              </li>
+              <li className="aboutDropdownMobile">
+                <Link
+                  to="/doctrine"
+                  className="subnavbar-tab"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    setShowNavbar(false);
+                  }}
+                >
+                  doctrine
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/fellowship"
+                  className="navbar-tab"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    setShowNavbar(false);
+                  }}
+                >
+                  fellowship
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="navbar-tab"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    setShowNavbar(false);
+                  }}
+                >
+                  contact
+                </Link>
+              </li>
               <li>
                 <DropdownMenu.Root>
                   <DropdownMenu.Trigger asChild>

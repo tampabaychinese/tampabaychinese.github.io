@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
       <div className="shortImageContainer">
-        <h1>ABOUT US</h1>
+        <h1>ABOUT TCBC</h1>
       </div>
       <div className="contentButtons">
         <a href="#info">
@@ -80,7 +80,15 @@ const About = () => {
               <b>Contact Pastor Hsieh</b>
             </p>
             <p data-aos="fade-up">Phone: 727-580-4114</p>
-            <p data-aos="fade-up">Email: jhsieh1@tampabay.rr.com</p>
+            <p data-aos="fade-up">
+              Email:{" "}
+              <a
+                className="pastorEmail"
+                onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
+              >
+                jhsieh1@tampabay.rr.com
+              </a>
+            </p>
           </div>
         </div>
       </div>

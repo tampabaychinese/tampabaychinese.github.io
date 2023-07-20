@@ -7,14 +7,14 @@ const Contact = () => {
       <div className="shortImageContainer">
         <h1>CONTACT US</h1>
       </div>
+      <div className="goldSpacer"></div>
       <div className="addressContainer">
         <h4 data-aos="fade-right">CHURCH ADDRESS:</h4>
         <p data-aos="fade-right">
           6281 90th Ave. North, Pinellas Park, FL 33782
         </p>
         <button
-          className="directionsButton"
-          data-aos="fade-right"
+          className="primaryButton"
           onClick={() =>
             window.open(
               "https://www.google.com/maps/dir//Tampa+Bay+Chinese+Baptist+Church,+6281+90th+Ave+N,+Pinellas+Park,+FL+33782/@27.8540872,-82.7632231,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88c2e424b3ed6bd5:0xd548df28a069ed1a!2m2!1d-82.7220236!2d27.8540094!3e0?entry=ttu"

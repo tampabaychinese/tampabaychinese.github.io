@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 
 html,body{
     overflow-x: hidden;
@@ -7,8 +8,9 @@ html,body{
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    /* background-color: #fcfcfc; */
+    /* font-family: "Inter", sans-serif; */
     background-color: white;
   }
   
@@ -46,10 +48,6 @@ footer {
 /* BUTTONS */ 
 
 .primaryButton {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
     background-color: #D7BE69;
     border-radius: 50px;
     color:white; 

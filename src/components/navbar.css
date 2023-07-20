@@ -1,3 +1,4 @@
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -26,6 +27,38 @@
   z-index: 1; 
   box-shadow: 0 0 2px 0 rgba(0,0,0,.6);
   border-radius: 5px;
+
+  transform-origin: var(--radix-dropdown-menu-content-transform-origin);
+  animation: stretchIn 0.5s;
+}
+
+.aboutDropdownContent {
+  background-color: white;
+  padding:15px 40px 15px 20px; 
+  font-size: 13px; 
+  z-index: 1; 
+  line-height: 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+
+  transform-origin: var(--radix-dropdown-menu-content-transform-origin);
+  animation: stretchIn 0.5s;
+}
+
+@keyframes stretchIn {
+  from {
+    opacity: 0;
+    transform: scaleY(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.aboutDropdownMobile {
+  display: none;
 }
 
 .logo {
@@ -46,6 +79,8 @@
   border-style: none;
   font-size: 13px;
   box-shadow: 0 0 1px 0 rgba(0,0,0,.9);
+  white-space:nowrap;
+  overflow:hidden;
 }
 
 .tcbc-title {
@@ -64,15 +99,33 @@
 
 .navbar-tab {
   transition: 0.75s;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f234f;
+  white-space:nowrap;
+  overflow:hidden;
 }
 
 .navbar-tab:hover {
   color:darkred; 
 }
 
+.subnavbar-tab {
+  transition: 0.75s;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f234f;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+.subnavbar-tab:hover {
+  color:darkred; 
+}
+
 .nav-elements ul {
   display: flex;
-  /* justify-content: space-between; */
   list-style-type: none;
   justify-content: center;
   align-items: center;
@@ -116,15 +169,19 @@
     display: block;
     cursor: pointer;
     padding-left: 20px; 
+    height: 85px; 
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   .nav-elements {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 85px;
     background-color: white; 
     width: 0px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 85px);
     transition: all 0.4s ease-in;
     overflow: hidden;
     opacity: 80%;
@@ -143,6 +200,18 @@
   .nav-elements ul li {
     margin-right: unset;
     margin-top: 22px;
+  }
+
+  .aboutDropdownContent{
+    display: none;
+  }
+
+  .aboutDropdown {
+    display: none;
+  }
+
+  .aboutDropdownMobile {
+    display: block;
   }
 }
 

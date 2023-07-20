@@ -63,6 +63,11 @@
     display: none;
 }
 
+.pastorEmail {
+    text-decoration: underline;
+    color: blue; 
+}
+
 @media (max-width: 900px) { 
     .pastorPicMobile {
         display: block;

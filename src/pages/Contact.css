@@ -17,22 +17,6 @@
   line-height: 20px; 
 }
 
-.directionsButton {
-    background-color: #D7BE69;
-    border-radius: 20px;
-    color:black; 
-    border: none; 
-    padding: 10px; 
-    padding-left: 30px; 
-    padding-right: 30px; 
-    font-weight: 600;
-    margin-top: 20px; 
-}
-
-.directionsButton:hover {
-    background-color: goldenrod;
-}
-
 .officeHoursContainer {
     background-color: #f0f0f0;
     padding: 50px; 

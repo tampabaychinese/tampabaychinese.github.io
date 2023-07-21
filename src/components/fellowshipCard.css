@@ -1,0 +1,65 @@
+.fellowshipCardContainer {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.fellowshipCardImg {
+    height:300px; 
+    width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white; 
+    transition: 0.4s;
+    margin-top: -5px;
+}
+
+.fellowshipImg {
+    height:inherit; 
+    width:inherit;
+    object-fit:cover; 
+}
+
+.opacityCover {
+    position: absolute;
+    height:100%; 
+    width:100%;
+    background-color: black;
+    opacity: 40%;
+}
+
+.cardName {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+.cardDescription {
+    text-transform: lowercase; 
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.fellowshipCardImg:hover {
+    color: rgb(0,0,0,0)
+}
+
+.fellowshipCardImg:hover > .opacityCover {
+    opacity: 0;
+}
+
+@media (max-width: 600px) {
+    .fellowshipCardImg {
+        height:80vw; 
+        width: 80vw;
+        margin-right: auto;
+        max-width: 100%;
+    }
+}
+
+
+

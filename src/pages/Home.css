@@ -4,6 +4,24 @@
     background-size: cover;
     background-position: center; 
    
-    padding-top: 250px; 
-    padding-bottom: 250px; 
+    height: calc(100vh - 85px);
+    max-height: 1000px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.meetingsContainer {
+    padding-top:60px; 
+    padding-bottom: 60px; 
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+.meetingDetailsContainer {
+    background-color: #f3f3f3;
+    padding-top:40px; 
+    padding-bottom: 40px; 
+    padding-left: 10%;
+    padding-right: 10%; 
 }

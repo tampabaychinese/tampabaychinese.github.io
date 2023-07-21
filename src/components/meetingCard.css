@@ -1,0 +1,35 @@
+.meetingCardContainer {
+    margin-left: 10px; 
+    margin-right: 20px; 
+    width: 180px; 
+    height: 180px; 
+    display: inline-block;
+    padding: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.meetingCircle {
+    background-color: rgb(232, 195, 101);
+    height: 180px; 
+    width: 180px; 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white; 
+    border-radius: 200px;
+    transition: 0.75s;
+    text-decoration: none;
+}
+
+.meetingCircle:hover{
+    transform: scale(1.05);
+    overflow: hidden;
+    background-color: rgb(255, 213, 106);
+}
+
+.meetingTitle {
+    margin-top: -1px; 
+    font-weight: 600;
+    text-transform: uppercase;
+}

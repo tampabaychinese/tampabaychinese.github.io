@@ -9,8 +9,7 @@ import "./navbar.css";
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [language, setLanguage] = useState("English");
-
-  // const tabs = ["about", "doctrine", "fellowship", "contact"];
+  const [currentTab, setCurrentTab] = useState("");
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -23,13 +22,39 @@ const Navbar = () => {
     console.log(window.language);
   }, []);
 
+  const createTab = (link, title) => {
+    return (
+      <Link
+        to={"/" + link}
+        className="subnavbar-tab"
+        onClick={() => {
+          window.scrollTo(0, 0);
+          setCurrentTab(link);
+          setShowNavbar(false);
+        }}
+        style={{
+          color: currentTab === link ? "darkred" : "black",
+        }}
+      >
+        {title != null ? title : link}
+      </Link>
+    );
+  };
+
   return (
     <div>
       <nav className="navbar">
         <div className="container">
           <div className="logo">
             <img src={HeartLogo} className="heart-img" alt="logo" />
-            <Link to="/" className="tcbc-title">
+            <Link
+              to="/"
+              className="tcbc-title"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                setCurrentTab("");
+              }}
+            >
               Tampa bay Chinese Baptist Church
             </Link>
           </div>
@@ -41,7 +66,17 @@ const Navbar = () => {
               <li className="aboutDropdown">
                 <DropdownMenu.Root>
                   <DropdownMenu.Trigger asChild>
-                    <a className="navbar-tab">ABOUT US ▾</a>
+                    <a
+                      className="navbar-tab"
+                      style={{
+                        color:
+                          currentTab === "about" || currentTab === "doctrine"
+                            ? "darkred"
+                            : "black",
+                      }}
+                    >
+                      ABOUT US ▾
+                    </a>
                   </DropdownMenu.Trigger>
                   <DropdownMenu.Portal>
                     <DropdownMenu.Content
@@ -49,81 +84,21 @@ const Navbar = () => {
                       sideOffset={32}
                     >
                       <DropdownMenu.Item asChild>
-                        <Link
-                          to="/about"
-                          className="subnavbar-tab"
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            setShowNavbar(false);
-                          }}
-                        >
-                          about TCBC
-                        </Link>
+                        {createTab("about", "about TCBC")}
                       </DropdownMenu.Item>
                       <DropdownMenu.Item asChild>
-                        <Link
-                          to="/doctrine"
-                          className="subnavbar-tab"
-                          onClick={() => {
-                            window.scrollTo(0, 0);
-                            setShowNavbar(false);
-                          }}
-                        >
-                          doctrine
-                        </Link>
+                        {createTab("doctrine")}
                       </DropdownMenu.Item>
                     </DropdownMenu.Content>
                   </DropdownMenu.Portal>
                 </DropdownMenu.Root>
               </li>
               <li className="aboutDropdownMobile">
-                <Link
-                  to="/about"
-                  className="subnavbar-tab"
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                    setShowNavbar(false);
-                  }}
-                >
-                  about TCBC
-                </Link>
+                {createTab("about", "about TCBC")}
               </li>
-              <li className="aboutDropdownMobile">
-                <Link
-                  to="/doctrine"
-                  className="subnavbar-tab"
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                    setShowNavbar(false);
-                  }}
-                >
-                  doctrine
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/fellowship"
-                  className="navbar-tab"
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                    setShowNavbar(false);
-                  }}
-                >
-                  fellowship
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="navbar-tab"
-                  onClick={() => {
-                    window.scrollTo(0, 0);
-                    setShowNavbar(false);
-                  }}
-                >
-                  contact
-                </Link>
-              </li>
+              <li className="aboutDropdownMobile">{createTab("doctrine")}</li>
+              <li>{createTab("fellowship")}</li>
+              <li>{createTab("contact")}</li>
               <li>
                 <DropdownMenu.Root>
                   <DropdownMenu.Trigger asChild>
@@ -159,7 +134,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div style={{ height: "85px" }}></div>
     </div>
   );
 };

@@ -20,7 +20,12 @@ const About = () => {
         </a>
       </div>
       <div className="infoContainer" id="info">
-        <h3 data-aos="fade-up">GENERAL INFORMATION</h3>
+        <h3
+          data-aos="fade-up"
+          style={{ paddingTop: "-40px", marginTop: "40px" }}
+        >
+          GENERAL INFORMATION
+        </h3>
         <table className="infoTable" data-aos="fade-up">
           <tr>
             <th className="infoCard">
@@ -43,7 +48,12 @@ const About = () => {
         </table>
       </div>
       <div className="historyContainer" id="history">
-        <h3 data-aos="fade-up">CHURCH HISTORY</h3>
+        <h3
+          data-aos="fade-up"
+          style={{ paddingTop: "-40px", marginTop: "40px" }}
+        >
+          CHURCH HISTORY
+        </h3>
         <p data-aos="fade-up">
           The Chinese Fellowship began its Sunday Service at Seminole First
           Baptist Church in March 1993. In January 2000, it became an
@@ -54,7 +64,12 @@ const About = () => {
         </p>
       </div>
       <div className="pastorContainer" id="pastor">
-        <h3 data-aos="fade-up">OUR PASTOR</h3>
+        <h3
+          data-aos="fade-up"
+          style={{ paddingTop: "-40px", marginTop: "40px" }}
+        >
+          OUR PASTOR
+        </h3>
         <img
           src={PastorPic}
           className="pastorPicMobile"

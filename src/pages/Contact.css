@@ -30,8 +30,8 @@
 }
 
 .socialIcon:hover {
-    height: 52px;
-    width: 52px; 
+    transform: scale(1.1);
+    overflow: hidden;
 }
 
 .socialIconButton {

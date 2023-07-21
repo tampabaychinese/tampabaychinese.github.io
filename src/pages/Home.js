@@ -10,7 +10,8 @@ const Home = () => {
       time: "9:30am-10:30am",
       weekDay: "Sunday",
       inPerson: true,
-      details: "",
+      details:
+        "We offer 4 different Sunday School classes. Adult, Youth, and English Sunday Schools are from 9:30am-10:30am. Children's Sunday School is from 10:45am-12pm.",
     },
     {
       name: "Sunday Worship",
@@ -41,8 +42,11 @@ const Home = () => {
     <div>
       <div className="mainImageContainer">
         <div>
-          <h1>placeholder text over placeholder image</h1>
-          <h4>placeholder subtitle here (some bible quote?)</h4>
+          <h1>Your attitude should be the same as that of Christ Jesus.</h1>
+          <h4>Phil. 2:5</h4>
+          <h4>
+            This is currently placeholder text and a random background image
+          </h4>
         </div>
       </div>
       <div className="meetingsContainer">

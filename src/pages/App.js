@@ -4,6 +4,7 @@ import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
 import Doctrine from "./Doctrine";
+import NotFound from "./NotFound";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
@@ -16,11 +17,13 @@ function App() {
       <Router>
         <Navbar />
         <div className="flex-wrapper">
+          <div style={{ height: "85px" }}></div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/doctrine" element={<Doctrine />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>

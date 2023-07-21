@@ -28,7 +28,7 @@
 
 .historyContainer {
     padding-top: 40px; 
-    padding-bottom: 40px; 
+    padding-bottom: 60px; 
     padding-left: 10%; 
     padding-right: 10%; 
     background-color: #d7bd69ce;
@@ -37,7 +37,7 @@
 
 .pastorContainer {
     padding-top: 40px; 
-    padding-bottom: 40px; 
+    padding-bottom: 60px; 
     padding-left: 10%; 
     padding-right: 10%; 
     flex: 50%;

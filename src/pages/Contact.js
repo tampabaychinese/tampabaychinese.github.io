@@ -1,8 +1,6 @@
 import React from "react";
+import { FaFacebook, FaYoutube, FaEnvelope } from "react-icons/fa";
 
-import Facebook from "../assets/facebook-icon.png";
-import Youtube from "../assets/youtube-icon.png";
-import Email from "../assets/iemail-icon.png";
 import "./Contact.css";
 
 const Contact = () => {
@@ -49,7 +47,7 @@ const Contact = () => {
                   window.open("https://www.facebook.com/groups/282579880948/")
                 }
               >
-                <img src={Facebook} className="socialIcon"></img>
+                <FaFacebook />
               </button>
               <button
                 className="socialIconButton"
@@ -57,13 +55,13 @@ const Contact = () => {
                   window.open("https://www.youtube.com/@tcbcchurch727")
                 }
               >
-                <img src={Youtube} className="socialIcon"></img>
+                <FaYoutube />
               </button>
               <button
                 className="socialIconButton"
                 onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
               >
-                <img src={Email} className="socialIcon"></img>
+                <FaEnvelope />
               </button>
             </div>
           </p>

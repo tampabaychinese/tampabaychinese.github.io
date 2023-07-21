@@ -22,21 +22,18 @@
     padding: 50px; 
 }
 
-.socialIcon {
-    height: 50px;
-    width: 50px; 
-    object-fit: contain;
-    transition: all 0.7s;
-}
-
-.socialIcon:hover {
-    transform: scale(1.1);
-    overflow: hidden;
-}
-
 .socialIconButton {
     margin-top: 25px; 
     border: none;
     margin-left: 15px; 
     margin-right: 15px; 
+    font-size: 40px; 
+    transition: all 0.7s;
+
+}
+
+.socialIconButton:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    color:#D7BE69; 
 }

@@ -1,4 +1,8 @@
-/* DEPRECATED - CURRENTLY NOT IN USE */
+/*
+ *
+ * DEPRECATED - CURRENTLY NOT IN USE
+ *
+ */
 
 import React from "react";
 import "./About.css";

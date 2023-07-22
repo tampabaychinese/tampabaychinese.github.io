@@ -28,6 +28,10 @@
     padding-right: 10%; 
 }
 
+.meetingDetailsContainer:target {
+    scroll-margin-top: 80px;
+}
+
 .childMeetingDetails {
     margin-top: 40px; 
     padding-top: 20px; 
@@ -36,6 +40,10 @@
     padding-right: 10%; 
     background-color: white;
     margin-bottom: 20px;
+}
+
+.childMeetingDetails:target {
+    scroll-margin-top: 150px;
 }
 
 .contactContainer {

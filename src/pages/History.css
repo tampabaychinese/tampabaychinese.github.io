@@ -1,0 +1,13 @@
+.churchHistoryImageContainer {
+    background-image: url("../assets/placeholder-image.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center; 
+   
+    min-height: calc(100vh - 85px);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}

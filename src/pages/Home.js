@@ -95,7 +95,11 @@ const Home = () => {
         )}
         <p>{data.details}</p>
         {data.url ? (
-          <a onClick={() => window.open(data.url)} className="standardURL">
+          <a
+            onClick={() => window.open(data.url)}
+            className="standardURL"
+            style={{ overflowWrap: "break-word" }}
+          >
             {data.url}
           </a>
         ) : null}

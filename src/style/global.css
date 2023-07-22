@@ -73,3 +73,10 @@ footer {
     min-width: 214px; 
 }
 
+/* text */ 
+
+.standardURL {
+    text-decoration: underline;
+    color: blue; 
+}
+

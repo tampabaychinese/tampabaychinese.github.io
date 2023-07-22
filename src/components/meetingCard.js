@@ -10,6 +10,7 @@ const MeetingCard = (props) => {
         onClick={() => {
           props.onClick();
         }}
+        style={{ backgroundColor: props.color ? props.color : "#DEB54D" }}
       >
         <div>
           {props.inPerson ? (
@@ -18,6 +19,16 @@ const MeetingCard = (props) => {
             <FaLaptop style={{ fontSize: "40px" }} />
           )}
           <p className="meetingTitle">{props.name}</p>
+          {props.subtitle != null ? (
+            <p
+              className="circleSubtitle"
+              style={{
+                color: props.subColor ? props.subColor : "darkblue",
+              }}
+            >
+              {props.subtitle}
+            </p>
+          ) : null}
         </div>
       </a>
       <h3 style={{ fontSize: "16px" }}>{props.time}</h3>

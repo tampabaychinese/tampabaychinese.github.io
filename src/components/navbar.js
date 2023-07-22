@@ -97,8 +97,9 @@ const Navbar = () => {
                 {createTab("about", "about TCBC")}
               </li>
               <li className="aboutDropdownMobile">{createTab("doctrine")}</li>
-              <li>{createTab("fellowship")}</li>
-              <li>{createTab("contact")}</li>
+              <li>{createTab("ministries")}</li>
+              <li>{createTab("online")}</li>
+              <li>{createTab("connect")}</li>
               <li>
                 <DropdownMenu.Root>
                   <DropdownMenu.Trigger asChild>

@@ -2,9 +2,9 @@ import React from "react";
 
 import ExamplePic from "../assets/familyPaster.jpeg";
 import FellowshipCard from "../components/fellowshipCard";
-import "./Fellowship.css";
+import "./Ministries.css";
 
-const Fellowship = () => {
+const Ministries = () => {
   const classes = [
     {
       name: "Youth Sunday School",
@@ -70,4 +70,4 @@ const Fellowship = () => {
     </div>
   );
 };
-export default Fellowship;
+export default Ministries;

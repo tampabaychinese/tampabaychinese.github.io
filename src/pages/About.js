@@ -1,6 +1,8 @@
+/* DEPRECATED - CURRENTLY NOT IN USE */
+
 import React from "react";
 import "./About.css";
-import PastorPic from "../assets/familyPaster.jpeg";
+import PastorPic from "../assets/pastor.jpg";
 
 const About = () => {
   return (
@@ -98,7 +100,7 @@ const About = () => {
             <p data-aos="fade-up">
               Email:{" "}
               <a
-                className="pastorEmail"
+                className="standardURL"
                 onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
               >
                 jhsieh1@tampabay.rr.com

@@ -11,8 +11,8 @@
 
 .meetingCircle {
     background-color: rgb(222, 181, 77);
-    height: 180px; 
-    width: 180px; 
+    height: 175px; 
+    width: 175px; 
     justify-content: center;
     display: flex;
     align-items: center;
@@ -21,6 +21,7 @@
     transition: 0.75s;
     text-decoration: none;
     opacity: 80%;
+    padding: 5%;
 }
 
 .meetingCircle:hover{

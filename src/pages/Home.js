@@ -1,5 +1,5 @@
 import React from "react";
-import MeetingCard from "../components/meetingCard";
+import CircleCard from "../components/circleCard";
 import { useState } from "react";
 
 import ContactSection from "../components/contactSection";
@@ -26,7 +26,7 @@ const Home = () => {
         },
         {
           name: "Sunday Worship",
-          time: "10:30am-12pm",
+          time: "10:45am-12pm",
           subtitle: "(with online streaming)",
           weekDay: "Sunday",
           inPerson: true,
@@ -124,11 +124,11 @@ const Home = () => {
           <i>Click for more details</i>
         </p>
         {meetings.map((x, i) => (
-          <MeetingCard
+          <CircleCard
             name={x.name}
-            time={x.time}
+            caption={x.time}
             subtitle={x.subtitle}
-            inPerson={x.inPerson}
+            icon={x.inPerson ? "church" : "laptop"}
             href="#meetingDetails"
             onClick={() => {
               if (
@@ -150,11 +150,11 @@ const Home = () => {
             {meetings[currentMeeting].childMeetings.length > 0 ? (
               <div>
                 {meetings[currentMeeting].childMeetings.map((x, i) => (
-                  <MeetingCard
+                  <CircleCard
                     name={x.name}
-                    time={x.time}
+                    caption={x.time}
                     subtitle={x.subtitle}
-                    inPerson={x.inPerson}
+                    icon={x.inPerson ? "church" : "laptop"}
                     href="#childMeetingDetails"
                     color={"#8B0000"}
                     subColor={"#DEB54D"}

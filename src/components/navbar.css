@@ -105,6 +105,7 @@
   color: #2f234f;
   white-space:nowrap;
   overflow:hidden;
+  transition: 0.5s; 
 }
 
 .navbar-tab:hover {

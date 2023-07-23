@@ -33,6 +33,14 @@ const Home = () => {
           details: "Also available on live stream through YouTube",
           url: "https://www.youtube.com/@tcbcchurch727/streams",
         },
+        {
+          name: "Lunch",
+          time: "12pm-1pm",
+          subtitle: "",
+          weekDay: "Sunday",
+          inPerson: true,
+          details: "Join us for lunch!",
+        },
       ],
     },
     {

@@ -23,7 +23,7 @@ const Online = () => {
       name: "Facebook",
       caption: "Get social with us!",
       subtitle: "",
-      href: "https://www.youtube.com/@tcbcchurch727/videos",
+      href: "https://www.facebook.com/groups/282579880948/",
       icon: "facebook",
     },
     {

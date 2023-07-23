@@ -62,11 +62,12 @@ const Online = () => {
               caption={x.caption}
               subtitle={x.subtitle}
               inPerson={false}
-              href=""
+              href="#"
               icon={x.icon}
               color="#d1b75e"
               onClick={() => {
                 window.open(x.href);
+                return false;
               }}
             />
           ))}

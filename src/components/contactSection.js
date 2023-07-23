@@ -8,10 +8,10 @@ const ContactSection = () => {
     <div>
       <h2>CONNECT WITH US</h2>
       <div>
-        <p>
+        <p style={{ fontSize: "19px" }}>
           <b>Phone:</b> (727) 546-3057
         </p>
-        <p>
+        <p style={{ fontSize: "19px" }}>
           <b>Email:</b>{" "}
           <a
             className="standardURL"
@@ -19,9 +19,10 @@ const ContactSection = () => {
           >
             jhsieh1@tampabay.rr.com
           </a>
-          <div>
+          <div className="socialButtonContainer">
             <button
               className="socialIconButton"
+              //   style={{ color: "#4267B2" }}
               onClick={() =>
                 window.open("https://www.facebook.com/groups/282579880948/")
               }
@@ -30,17 +31,19 @@ const ContactSection = () => {
             </button>
             <button
               className="socialIconButton"
+              //   style={{ color: "black" }}
+              onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
+            >
+              <FaEnvelope />
+            </button>
+            <button
+              className="socialIconButton"
+              //   style={{ color: "red" }}
               onClick={() =>
                 window.open("https://www.youtube.com/@tcbcchurch727")
               }
             >
               <FaYoutube />
-            </button>
-            <button
-              className="socialIconButton"
-              onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
-            >
-              <FaEnvelope />
             </button>
           </div>
         </p>

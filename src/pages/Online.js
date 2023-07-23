@@ -35,7 +35,7 @@ const Online = () => {
     },
     {
       name: "Zoom",
-      caption: "Call for Zoom info",
+      caption: "Call us for Zoom info",
       subtitle: "",
       href: "https://zoom.us/",
       icon: "laptop",

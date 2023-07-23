@@ -72,7 +72,8 @@ const Navbar = () => {
                         color:
                           currentTab === "about" ||
                           currentTab === "doctrine" ||
-                          currentTab === "history"
+                          currentTab === "history" ||
+                          currentTab === "pastor"
                             ? "darkred"
                             : "black",
                       }}

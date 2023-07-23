@@ -23,3 +23,18 @@
 .socialButtonContainer {
     margin-top: 5px; 
 }
+
+.infoText {
+    font-size: 19px;
+}
+
+@media (max-width: 400px) {
+    .infoText {
+        font-size: 16px;
+    }
+
+    .socialButtonContainer {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+  }

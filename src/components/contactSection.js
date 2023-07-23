@@ -8,10 +8,10 @@ const ContactSection = () => {
     <div>
       <h2>CONNECT WITH US</h2>
       <div>
-        <p style={{ fontSize: "19px" }}>
+        <p className="infoText">
           <b>Phone:</b> (727) 546-3057
         </p>
-        <p style={{ fontSize: "19px" }}>
+        <p className="infoText">
           <b>Email:</b>{" "}
           <a
             className="standardURL"

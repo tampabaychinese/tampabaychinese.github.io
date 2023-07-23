@@ -1,0 +1,40 @@
+.fellowshipDescription {
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 30px; 
+    padding-top:20px; 
+    padding-bottom: 20px;
+    background-color: #D7BE69;
+    font-weight: 600;
+    color: white; 
+}
+
+.classesContainer {
+
+}
+
+.sundaySchoolContainer {
+    padding-top: 30px; 
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.bibleStudyContainer {
+    background-color: #f3f3f3;
+    background-color: rgb(224, 224, 224);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+    padding-top: 30px;
+
+}
+
+.discipleshipContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: rgb(224, 224, 224);
+    background-color: #f3f3f3;
+}

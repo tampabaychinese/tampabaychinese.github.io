@@ -1,3 +1,9 @@
+/*
+ *
+ * DEPRECATED - CURRENTLY NOT IN USE
+ *
+ */
+
 .contentButtons {
     margin-top: 20px; 
     margin-bottom: 60px; 
@@ -55,17 +61,12 @@
     margin-right: 50px; 
     max-width: 25%;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 15px;
     display: block;
 }
 
 .pastorPicMobile {
     display: none;
-}
-
-.pastorEmail {
-    text-decoration: underline;
-    color: blue; 
 }
 
 @media (max-width: 900px) { 

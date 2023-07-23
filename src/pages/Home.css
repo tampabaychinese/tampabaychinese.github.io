@@ -15,7 +15,7 @@
 
 .meetingsContainer {
     padding-top:60px; 
-    padding-bottom: 60px; 
+    padding-bottom: 80px; 
     padding-left: 10%;
     padding-right: 10%; 
 }
@@ -23,7 +23,33 @@
 .meetingDetailsContainer {
     background-color: #f3f3f3;
     padding-top:40px; 
-    padding-bottom: 40px; 
+    padding-bottom: 50px; 
     padding-left: 10%;
     padding-right: 10%; 
+}
+
+.meetingDetailsContainer:target {
+    scroll-margin-top: 80px;
+}
+
+.childMeetingDetails {
+    margin-top: 40px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 10%; 
+    padding-right: 10%; 
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.childMeetingDetails:target {
+    scroll-margin-top: 150px;
+}
+
+.contactContainer {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    padding-left: 10%; 
+    padding-right: 10%; 
+    background-color: rgb(224, 224, 224);
 }

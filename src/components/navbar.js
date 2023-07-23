@@ -70,7 +70,9 @@ const Navbar = () => {
                       className="navbar-tab"
                       style={{
                         color:
-                          currentTab === "about" || currentTab === "doctrine"
+                          currentTab === "about" ||
+                          currentTab === "doctrine" ||
+                          currentTab === "history"
                             ? "darkred"
                             : "black",
                       }}
@@ -84,7 +86,10 @@ const Navbar = () => {
                       sideOffset={32}
                     >
                       <DropdownMenu.Item asChild>
-                        {createTab("about", "about TCBC")}
+                        {createTab("pastor", "Our Pastor")}
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item asChild>
+                        {createTab("history")}
                       </DropdownMenu.Item>
                       <DropdownMenu.Item asChild>
                         {createTab("doctrine")}
@@ -94,11 +99,13 @@ const Navbar = () => {
                 </DropdownMenu.Root>
               </li>
               <li className="aboutDropdownMobile">
-                {createTab("about", "about TCBC")}
+                {createTab("pastor", "our Pastor")}
               </li>
+              <li className="aboutDropdownMobile">{createTab("history")}</li>
               <li className="aboutDropdownMobile">{createTab("doctrine")}</li>
-              <li>{createTab("fellowship")}</li>
-              <li>{createTab("contact")}</li>
+              <li>{createTab("ministries")}</li>
+              <li>{createTab("online")}</li>
+              <li>{createTab("connect")}</li>
               <li>
                 <DropdownMenu.Root>
                   <DropdownMenu.Trigger asChild>

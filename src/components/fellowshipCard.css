@@ -39,7 +39,7 @@
 }
 
 .cardDescription {
-    text-transform: lowercase; 
+    text-transform: none; 
     font-size: 14px;
     margin-top: -15px;
 }

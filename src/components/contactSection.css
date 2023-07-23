@@ -1,0 +1,16 @@
+.socialIconButton {
+    margin-top: 25px; 
+    border: none;
+    margin-left: 15px; 
+    margin-right: 15px; 
+    font-size: 40px; 
+    transition: all 0.7s;
+    background-color:transparent;
+    color: black; 
+}
+
+.socialIconButton:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+    color:#D7BE69; 
+}

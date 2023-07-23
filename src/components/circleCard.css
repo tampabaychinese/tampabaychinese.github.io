@@ -10,9 +10,9 @@
 }
 
 .meetingCircle {
-    background-color: rgb(232, 195, 101);
-    height: 180px; 
-    width: 180px; 
+    background-color: rgb(222, 181, 77);
+    height: 175px; 
+    width: 175px; 
     justify-content: center;
     display: flex;
     align-items: center;
@@ -20,16 +20,25 @@
     border-radius: 200px;
     transition: 0.75s;
     text-decoration: none;
+    opacity: 80%;
+    padding: 5%;
 }
 
 .meetingCircle:hover{
     transform: scale(1.05);
     overflow: hidden;
-    background-color: rgb(255, 213, 106);
+    /* background-color: rgb(255, 213, 106); */
+    opacity: 100%;
 }
 
 .meetingTitle {
     margin-top: -1px; 
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.circleSubtitle {
+    margin-top: -15px; 
+    font-size: 12px; 
+    color: darkblue; 
 }

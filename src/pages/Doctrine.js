@@ -17,7 +17,7 @@ const Doctrine = () => {
   return (
     <div>
       <div className="titleImageContainer">
-        <h1>TCBC Doctrinal Statement</h1>
+        <h1>TCBC DOCTRINAL STATEMENT</h1>
       </div>
       <div className="coreBeliefsContainer" data-aos="fade-up">
         <h3>CORE BELIEFS</h3>

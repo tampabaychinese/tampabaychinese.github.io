@@ -9,8 +9,8 @@ const Home = () => {
   const meetings = [
     {
       name: "Sunday Gathering",
-      time: "9:30am-12pm",
-      subtitle: "",
+      time: "9:30am-1pm",
+      subtitle: "(Details below)",
       weekDay: "Sunday",
       inPerson: true,
       details: "",

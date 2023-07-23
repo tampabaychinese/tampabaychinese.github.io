@@ -58,7 +58,7 @@ const Ministries = () => {
   return (
     <div>
       <div className="shortImageContainer">
-        <h1>FELLOWSHIP</h1>
+        <h1>MINISTRIES</h1>
       </div>
       <div className="fellowshipDescription">
         <p>
@@ -68,7 +68,7 @@ const Ministries = () => {
           Christ.
         </p>
       </div>
-      <div className="classesContainer">
+      <div>
         <p>
           Note that the below pictures should be replaced with pictures of each
           class/ministry

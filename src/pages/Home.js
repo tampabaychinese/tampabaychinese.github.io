@@ -21,6 +21,7 @@ const Home = () => {
           weekDay: "Sunday",
           subtitle: "",
           inPerson: true,
+          icon: "book",
           details:
             "We offer 4 different Sunday School classes. Adult, Youth, and English Sunday Schools are from 9:30am-10:30am. Children's Sunday School is from 10:45am-12pm.",
         },
@@ -30,6 +31,7 @@ const Home = () => {
           subtitle: "(with online streaming)",
           weekDay: "Sunday",
           inPerson: true,
+          icon: "church",
           details: "Also available on live stream through YouTube",
           url: "https://www.youtube.com/@tcbcchurch727/streams",
         },
@@ -38,6 +40,7 @@ const Home = () => {
           time: "12pm-1pm",
           subtitle: "",
           weekDay: "Sunday",
+          icon: "food",
           inPerson: true,
           details: "Join us for lunch!",
         },
@@ -162,7 +165,7 @@ const Home = () => {
                     name={x.name}
                     caption={x.time}
                     subtitle={x.subtitle}
-                    icon={x.inPerson ? "church" : "laptop"}
+                    icon={x.icon}
                     href="#childMeetingDetails"
                     color={"#8B0000"}
                     subColor={"#DEB54D"}

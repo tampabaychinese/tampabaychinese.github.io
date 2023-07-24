@@ -4,6 +4,8 @@ import {
   FaYoutube,
   FaFacebook,
   FaEnvelope,
+  FaBible,
+  FaDrumstickBite,
 } from "react-icons/fa";
 import "./circleCard.css";
 
@@ -25,6 +27,10 @@ const CircleCard = (props) => {
             <FaLaptop style={{ fontSize: "40px" }} />
           ) : props.icon === "youtube" ? (
             <FaYoutube style={{ fontSize: "40px" }} />
+          ) : props.icon === "food" ? (
+            <FaDrumstickBite style={{ fontSize: "40px" }} />
+          ) : props.icon === "book" ? (
+            <FaBible style={{ fontSize: "40px" }} />
           ) : props.icon === "facebook" ? (
             <FaFacebook style={{ fontSize: "40px" }} />
           ) : (

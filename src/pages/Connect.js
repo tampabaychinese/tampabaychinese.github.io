@@ -11,7 +11,7 @@ const Connect = () => {
       </div>
       <div className="goldSpacer"></div>
       <div className="addressContainer">
-        <h4>CHURCH ADDRESS:</h4>
+        <h3>CHURCH ADDRESS</h3>
         <p>6281 90th Ave. North, Pinellas Park, FL 33782</p>
         <button
           className="primaryButton"

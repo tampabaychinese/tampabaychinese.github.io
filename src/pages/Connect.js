@@ -2,30 +2,27 @@ import React from "react";
 
 import ContactSection from "../components/contactSection";
 import "./Connect.css";
+import data from "../data/Connect.json";
 
 const Connect = () => {
   return (
     <div>
       <div className="shortImageContainer">
-        <h1>CONNECT</h1>
+        <h1>{data.title}</h1>
       </div>
       <div className="goldSpacer"></div>
       <div className="addressContainer">
-        <h3>CHURCH ADDRESS</h3>
-        <p>6281 90th Ave. North, Pinellas Park, FL 33782</p>
+        <h3>{data.addressSection.title}</h3>
+        <p>{data.addressSection.subtitle}</p>
         <button
           className="primaryButton"
-          onClick={() =>
-            window.open(
-              "https://www.google.com/maps/dir//Tampa+Bay+Chinese+Baptist+Church,+6281+90th+Ave+N,+Pinellas+Park,+FL+33782/@27.8540872,-82.7632231,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88c2e424b3ed6bd5:0xd548df28a069ed1a!2m2!1d-82.7220236!2d27.8540094!3e0?entry=ttu"
-            )
-          }
+          onClick={() => window.open(data.addressSection.button.link)}
         >
-          GET DIRECTIONS
+          {data.addressSection.button.text}
         </button>
       </div>
       <div className="officeHoursContainer">
-        <ContactSection />
+        <ContactSection data={data.contactSection} />
       </div>
       <div>
         <div>

@@ -3,45 +3,41 @@ import { FaFacebook, FaYoutube, FaEnvelope } from "react-icons/fa";
 
 import "./contactSection.css";
 
-const ContactSection = () => {
+const ContactSection = (props) => {
   return (
     <div>
-      <h2>CONNECT WITH US</h2>
+      <h2>{props.data.title}</h2>
       <div>
         <p className="infoText">
-          <b>Phone:</b> (727) 546-3057
+          <b>Phone:</b> {props.data.phone}
         </p>
         <p className="infoText">
           <b>Email:</b>{" "}
           <a
             className="standardURL"
-            onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
+            onClick={() => window.open("mailto:" + props.data.email)}
           >
-            jhsieh1@tampabay.rr.com
+            {props.data.email}
           </a>
           <div className="socialButtonContainer">
             <button
               className="socialIconButton"
               //   style={{ color: "#4267B2" }}
-              onClick={() =>
-                window.open("https://www.facebook.com/groups/282579880948/")
-              }
+              onClick={() => window.open(props.data.facebook)}
             >
               <FaFacebook />
             </button>
             <button
               className="socialIconButton"
               //   style={{ color: "black" }}
-              onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
+              onClick={() => window.open("mailto:" + props.data.email)}
             >
               <FaEnvelope />
             </button>
             <button
               className="socialIconButton"
               //   style={{ color: "red" }}
-              onClick={() =>
-                window.open("https://www.youtube.com/@tcbcchurch727")
-              }
+              onClick={() => window.open(props.data.youtube)}
             >
               <FaYoutube />
             </button>

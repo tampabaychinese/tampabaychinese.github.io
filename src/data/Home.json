@@ -1,0 +1,84 @@
+{
+    "title": "Your attitude should be the same as that of Christ Jesus.", 
+    "subtitle": "Phil. 2:5", 
+    "scheduleSection": {
+        "title": "JOIN US FOR WORSHIP", 
+        "subtitle": "Click for more details", 
+        "meetings": [
+            {
+              "name": "Sunday Gathering",
+              "time": "9:30am-1pm",
+              "subtitle": "(Details below)",
+              "weekDay": "Sunday",
+              "inPerson": true,
+              "details": "",
+              "childMeetings": [
+                {
+                  "name": "Sunday School",
+                  "time": "9:30am-10:30am",
+                  "weekDay": "Sunday",
+                  "subtitle": "",
+                  "inPerson": true,
+                  "icon": "book",
+                  "details":
+                    "We offer 4 different Sunday School classes. Adult, Youth, and English Sunday Schools are from 9:30am-10:30am. Children's Sunday School is from 10:45am-12pm."
+                },
+                {
+                  "name": "Sunday Worship",
+                  "time": "10:45am-12pm",
+                  "subtitle": "(with online streaming)",
+                  "weekDay": "Sunday",
+                  "inPerson": true,
+                  "icon": "church",
+                  "details": "Also available on live stream through YouTube",
+                  "url": "https://www.youtube.com/@tcbcchurch727/streams"
+                },
+                {
+                  "name": "Lunch",
+                  "time": "12pm-1pm",
+                  "subtitle": "",
+                  "weekDay": "Sunday",
+                  "icon": "food",
+                  "inPerson": true,
+                  "details": "Join us for lunch!"
+                }
+              ]
+            },
+            {
+              "name": "Wednesday Discipleship",
+              "time": "7:30pm-8:30pm",
+              "subtitle": "(Zoom only)",
+              "weekDay": "Wednesday",
+              "inPerson": false,
+              "details": "Please Call for Zoom meeting information.",
+              "childMeetings": []
+            },
+            {
+              "name": "Friday Bible Study",
+              "time": "7:30pm-8:30pm",
+              "subtitle": "(Zoom only)",
+              "weekDay": "Friday",
+              "inPerson": false,
+              "details": "Please Call for Zoom meeting information.",
+              "childMeetings": []
+            },
+            {
+              "name": "Saturday Sarasota Bible Study",
+              "time": "TBD",
+              "subtitle": "",
+              "weekDay": "Saturday",
+              "inPerson": true,
+              "details":
+                "Paused, please join us online on Friday for bible study (using Zoom).",
+              "childMeetings": []
+            }
+        ]
+    }, 
+    "contactSection": {
+        "title": "CONNECT WITH US", 
+        "phone": "(727) 546-3057", 
+        "email": "jhsieh1@tampabay.rr.com", 
+        "facebook": "https://www.facebook.com/groups/282579880948/", 
+        "youtube": "https://www.youtube.com/@tcbcchurch727"
+    }
+}

@@ -1,11 +1,13 @@
+import data from "../data/Footer.json";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer>
-      <p>6281 90th Ave. North, Pinellas Park, FL 33682</p>
+      <p>{data.address}</p>
       <p>
-        2009-{currentYear} All Right Reserved @ Tampabay Chinese Baptist Church
+        2009-{currentYear} {data.copyright}
       </p>
     </footer>
   );

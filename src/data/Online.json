@@ -1,0 +1,44 @@
+{
+    "title": "ONLINE", 
+    "resoursesSection": {
+        "title": "Stay Connected Wherever, Whenever.", 
+        "subtitle": "TCBC offers a variety of online resources so that you can stay connected anywhere, anytime.", 
+        "resources": [
+            {
+                "name": "Sunday Worship Live Stream",
+                "caption": "10:45am-12pm",
+                "subtitle": "",
+                "href": "https://www.youtube.com/@tcbcchurch727/streams",
+                "icon": "youtube"
+              },
+              {
+                "name": "Sermon & Bible Study Archive",
+                "caption": "Through YouTube",
+                "subtitle": "",
+                "href": "https://www.youtube.com/@tcbcchurch727/videos",
+                "icon": "youtube"
+              },
+              {
+                "name": "Facebook",
+                "caption": "Get social with us!",
+                "subtitle": "",
+                "href": "https://www.facebook.com/groups/282579880948/",
+                "icon": "facebook"
+              },
+              {
+                "name": "Email",
+                "caption": "jhsieh1@tampabay.rr.com",
+                "subtitle": "",
+                "href": "mailto:jhsieh1@tampabay.rr.com",
+                "icon": "email"
+              },
+              {
+                "name": "Zoom",
+                "caption": "Call us for Zoom info",
+                "subtitle": "",
+                "href": "https://zoom.us/",
+                "icon": "laptop"
+              }
+        ]
+    }
+}

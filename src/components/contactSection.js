@@ -9,15 +9,18 @@ const ContactSection = (props) => {
       <h2>{props.data.title}</h2>
       <div>
         <p className="infoText">
-          <b>Phone:</b> {props.data.phone}
+          <b>{props.data.phoneSection.title}:</b>{" "}
+          {props.data.phoneSection.phone}
         </p>
         <p className="infoText">
-          <b>Email:</b>{" "}
+          <b>{props.data.emailSection.title}:</b>{" "}
           <a
             className="standardURL"
-            onClick={() => window.open("mailto:" + props.data.email)}
+            onClick={() =>
+              window.open("mailto:" + props.data.emailSection.email)
+            }
           >
-            {props.data.email}
+            {props.data.emailSection.email}
           </a>
           <div className="socialButtonContainer">
             <button
@@ -30,7 +33,9 @@ const ContactSection = (props) => {
             <button
               className="socialIconButton"
               //   style={{ color: "black" }}
-              onClick={() => window.open("mailto:" + props.data.email)}
+              onClick={() =>
+                window.open("mailto:" + props.data.emailSection.email)
+              }
             >
               <FaEnvelope />
             </button>

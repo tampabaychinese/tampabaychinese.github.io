@@ -76,8 +76,14 @@
     }, 
     "contactSection": {
         "title": "CONNECT WITH US", 
-        "phone": "(727) 546-3057", 
-        "email": "jhsieh1@tampabay.rr.com", 
+        "phoneSection": {
+            "title": "Phone",
+            "phone": "(727) 546-3057"
+        }, 
+        "emailSection": {
+            "title": "Email",
+            "email": "jhsieh1@tampabay.rr.com"
+        },
         "facebook": "https://www.facebook.com/groups/282579880948/", 
         "youtube": "https://www.youtube.com/@tcbcchurch727"
     }

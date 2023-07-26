@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 import HeartLogo from "../assets/heart.jpeg";
+import data from "../data/Header.json";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -55,7 +56,7 @@ const Navbar = () => {
                 setCurrentTab("");
               }}
             >
-              Tampa bay Chinese Baptist Church
+              {data.title}
             </Link>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
@@ -87,26 +88,30 @@ const Navbar = () => {
                       sideOffset={32}
                     >
                       <DropdownMenu.Item asChild>
-                        {createTab("pastor", "Our Pastor")}
+                        {createTab("pastor", data.tabs[0].subTabs[0])}
                       </DropdownMenu.Item>
                       <DropdownMenu.Item asChild>
-                        {createTab("history")}
+                        {createTab("history", data.tabs[0].subTabs[1])}
                       </DropdownMenu.Item>
                       <DropdownMenu.Item asChild>
-                        {createTab("doctrine")}
+                        {createTab("doctrine", data.tabs[0].subTabs[2])}
                       </DropdownMenu.Item>
                     </DropdownMenu.Content>
                   </DropdownMenu.Portal>
                 </DropdownMenu.Root>
               </li>
               <li className="aboutDropdownMobile">
-                {createTab("pastor", "our Pastor")}
+                {createTab("pastor", data.tabs[0].subTabs[0])}
               </li>
-              <li className="aboutDropdownMobile">{createTab("history")}</li>
-              <li className="aboutDropdownMobile">{createTab("doctrine")}</li>
-              <li>{createTab("ministries")}</li>
-              <li>{createTab("online")}</li>
-              <li>{createTab("connect")}</li>
+              <li className="aboutDropdownMobile">
+                {createTab("history", data.tabs[0].subTabs[1])}
+              </li>
+              <li className="aboutDropdownMobile">
+                {createTab("doctrine", data.tabs[0].subTabs[2])}
+              </li>
+              <li>{createTab("ministries", data.tabs[1].title)}</li>
+              <li>{createTab("online", data.tabs[2].title)}</li>
+              <li>{createTab("connect", data.tabs[3].title)}</li>
               <li>
                 <DropdownMenu.Root>
                   <DropdownMenu.Trigger asChild>

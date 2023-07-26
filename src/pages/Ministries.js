@@ -2,6 +2,8 @@ import React from "react";
 
 import ExamplePic from "../assets/familyPaster.jpeg";
 import FellowshipCard from "../components/fellowshipCard";
+
+import data from "../data/Ministries.json";
 import "./Ministries.css";
 
 const Ministries = () => {
@@ -58,15 +60,10 @@ const Ministries = () => {
   return (
     <div>
       <div className="shortImageContainer">
-        <h1>MINISTRIES</h1>
+        <h1>{data.title}</h1>
       </div>
       <div className="fellowshipDescription">
-        <p>
-          TCBC provides Biblical education through all ages. We encourage every
-          Christian to continually and progressively study the word of God so
-          that our spiritual lives will grow together and unite as one in Jesus
-          Christ.
-        </p>
+        <p>{data.subtitle}</p>
       </div>
       <div>
         <p>

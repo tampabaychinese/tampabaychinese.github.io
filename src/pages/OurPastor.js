@@ -2,48 +2,46 @@ import React from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 import PastorPic from "../assets/pastor.jpg";
+import data from "../data/OurPastor.json";
 import "./OurPastor.css";
 
 const OurPastor = () => {
   return (
     <div>
       <div className="shortImageContainer">
-        <h1>OUR PASTOR</h1>
+        <h1>{data.title}</h1>
       </div>
       <div className="ourPastorContainer">
         <div className="pastorRow">
           <img src={PastorPic} className="pastorPic" data-aos="fade-up"></img>
           <div data-aos="fade-up">
             <p data-aos="fade-up">
-              <b style={{ textTransform: "uppercase" }}>ABOUT PASTOR HSIEH</b>
+              <b style={{ textTransform: "uppercase" }}>
+                {data.pastorSection.title}
+              </b>
             </p>
-            <p data-aos="fade-up">
-              Pastor Hsieh was ordained as a part time pastor in November 1998.
-              He began his full time service in September 1999 while attending
-              Dallas Theological Seminary. In the year of 2008, he graduated
-              from DTS.
-            </p>
-            <p data-aos="fade-up">
-              Pastor Hsieh and his wife Susan have two grown up sons. Both the
-              elder son Jonathan and the younger son Brian are now serving at
-              Dallas churches after finishing study at Dallas Theological
-              Seminary in Texas.
-            </p>
+            {data.pastorSection.body.map((x, _) => (
+              <p data-aos="fade-up">{x}</p>
+            ))}
             <p data-aos="fade-up">
               <br />
               <br />
-              <b style={{ textTransform: "uppercase" }}>Contact Pastor Hsieh</b>
+              <b style={{ textTransform: "uppercase" }}>
+                {data.pastorSection.contact.title}
+              </b>
             </p>
             <p data-aos="fade-up">
-              <FaPhone /> - 727-580-4114
+              <FaPhone /> - {data.pastorSection.contact.phone}
             </p>
             <p data-aos="fade-up">
               <FaEnvelope /> -{" "}
               <a
                 className="standardURL"
-                onClick={() => window.open("mailto:jhsieh1@tampabay.rr.com")}
+                onClick={() =>
+                  window.open("mailto:" + data.pastorSection.contact.email)
+                }
               >
-                jhsieh1@tampabay.rr.com
+                {data.pastorSection.contact.email}
               </a>
             </p>
           </div>

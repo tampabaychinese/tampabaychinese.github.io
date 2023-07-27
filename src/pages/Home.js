@@ -59,9 +59,6 @@ const Home = (props) => {
         <div>
           <h1>{data.title}</h1>
           <h4>{data.subtitle}</h4>
-          <h4>
-            This is currently placeholder text and a random background image
-          </h4>
         </div>
       </div>
       <div className="meetingsContainer">

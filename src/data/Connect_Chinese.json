@@ -1,0 +1,24 @@
+{
+    "title": "連接", 
+    "addressSection": {
+        "title": "本會會址", 
+        "subtitle": "6281 90th Ave. North, Pinellas Park, FL 33782", 
+        "button" : {
+            "link": "https://www.google.com/maps/dir//Tampa+Bay+Chinese+Baptist+Church,+6281+90th+Ave+N,+Pinellas+Park,+FL+33782/@27.8540872,-82.7632231,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x88c2e424b3ed6bd5:0xd548df28a069ed1a!2m2!1d-82.7220236!2d27.8540094!3e0?entry=ttu", 
+            "text": "路線導向"
+        }
+    }, 
+    "contactSection": {
+        "title": "聯絡資訊", 
+        "phoneSection": {
+            "title": "電話",
+            "phone": "(727) 546-3057"
+        }, 
+        "emailSection": {
+            "title": "電子郵件",
+            "email": "jhsieh1@tampabay.rr.com"
+        },
+        "facebook": "https://www.facebook.com/groups/282579880948/", 
+        "youtube": "https://www.youtube.com/@tcbcchurch727"
+    }
+}

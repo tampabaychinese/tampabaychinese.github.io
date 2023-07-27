@@ -9,14 +9,14 @@
               "name": "Sunday Gathering",
               "time": "9:30am-1pm",
               "subtitle": "(Details below)",
-              "weekDay": "Sunday",
+              "weekDay": "星期天",
               "inPerson": true,
               "details": "",
               "childMeetings": [
                 {
                   "name": "Sunday School",
                   "time": "9:30am-10:30am",
-                  "weekDay": "Sunday",
+                  "weekDay": "星期天",
                   "subtitle": "",
                   "inPerson": true,
                   "icon": "book",
@@ -27,7 +27,7 @@
                   "name": "Sunday Worship",
                   "time": "10:45am-12pm",
                   "subtitle": "(with online streaming)",
-                  "weekDay": "Sunday",
+                  "weekDay": "星期天",
                   "inPerson": true,
                   "icon": "church",
                   "details": "Also available on live stream through YouTube",
@@ -37,7 +37,7 @@
                   "name": "Lunch",
                   "time": "12pm-1pm",
                   "subtitle": "",
-                  "weekDay": "Sunday",
+                  "weekDay": "星期天",
                   "icon": "food",
                   "inPerson": true,
                   "details": "Join us for lunch!"
@@ -45,28 +45,28 @@
               ]
             },
             {
-              "name": "Wednesday Discipleship",
+              "name": "星期三基要真理班",
               "time": "7:30pm-8:30pm",
               "subtitle": "(Zoom only)",
-              "weekDay": "Wednesday",
+              "weekDay": "星期三",
               "inPerson": false,
               "details": "Please Call for Zoom meeting information.",
               "childMeetings": []
             },
             {
-              "name": "Friday Bible Study",
+              "name": "星期五查經班",
               "time": "7:30pm-8:30pm",
               "subtitle": "(Zoom only)",
-              "weekDay": "Friday",
+              "weekDay": "星期五",
               "inPerson": false,
               "details": "Please Call for Zoom meeting information.",
               "childMeetings": []
             },
             {
-              "name": "Saturday Sarasota Bible Study",
+              "name": "星期六 Sarasota 查經班",
               "time": "TBD",
               "subtitle": "",
-              "weekDay": "Saturday",
+              "weekDay": "星期六",
               "inPerson": true,
               "details":
                 "Paused, please join us online on Friday for bible study (using Zoom).",
@@ -75,7 +75,7 @@
         ]
     }, 
     "contactSection": {
-        "title": "CONNECT WITH US", 
+        "title": "聯絡資訊", 
         "phoneSection": {
             "title": "電話",
             "phone": "(727) 546-3057"

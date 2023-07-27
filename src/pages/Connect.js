@@ -3,9 +3,10 @@ import React from "react";
 import ContactSection from "../components/contactSection";
 import "./Connect.css";
 import english from "../data/Connect.json";
+import chinese from "../data/Connect_Chinese.json";
 
 const Connect = (props) => {
-  const data = props.language === "English" ? english : english;
+  const data = props.language === "English" ? english : chinese;
 
   return (
     <div>

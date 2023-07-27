@@ -15,7 +15,6 @@ const History = (props) => {
           {data.body.map((x, _) => (
             <p>{x}</p>
           ))}
-          <h4>(background for this page will be a picture of the church)</h4>
         </div>
       </div>
     </div>

@@ -1,9 +1,12 @@
 import React from "react";
 
-import data from "../data/History.json";
+import english from "../data/History.json";
+import chinese from "../data/History_Chinese.json";
 import "./History.css";
 
-const History = () => {
+const History = (props) => {
+  const data = props.language === "English" ? english : chinese;
+
   return (
     <div>
       <div className="churchHistoryImageContainer">

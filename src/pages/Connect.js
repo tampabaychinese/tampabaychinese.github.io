@@ -2,9 +2,11 @@ import React from "react";
 
 import ContactSection from "../components/contactSection";
 import "./Connect.css";
-import data from "../data/Connect.json";
+import english from "../data/Connect.json";
 
-const Connect = () => {
+const Connect = (props) => {
+  const data = props.language === "English" ? english : english;
+
   return (
     <div>
       <div className="shortImageContainer">

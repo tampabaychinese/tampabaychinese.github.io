@@ -2,10 +2,13 @@ import React from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 import PastorPic from "../assets/pastor.jpg";
-import data from "../data/OurPastor.json";
+import english from "../data/OurPastor.json";
+import chinese from "../data/OurPastor_Chinese.json";
 import "./OurPastor.css";
 
-const OurPastor = () => {
+const OurPastor = (props) => {
+  const data = props.language === "English" ? english : chinese;
+
   return (
     <div>
       <div className="shortImageContainer">

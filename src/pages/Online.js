@@ -1,10 +1,12 @@
 import React from "react";
 
 import CircleCard from "../components/circleCard";
-import data from "../data/Online.json";
+import english from "../data/Online.json";
 import "./Online.css";
 
-const Online = () => {
+const Online = (props) => {
+  const data = props.language === "English" ? english : english;
+
   return (
     <div>
       <div className="shortImageContainer">

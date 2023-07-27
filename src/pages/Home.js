@@ -3,10 +3,12 @@ import CircleCard from "../components/circleCard";
 import { useState } from "react";
 
 import ContactSection from "../components/contactSection";
-import data from "../data/Home.json";
+import english from "../data/Home.json";
+import chinese from "../data/Home_Chinese.json";
 import "./Home.css";
 
-const Home = () => {
+const Home = (props) => {
+  const data = props.language === "English" ? english : chinese;
   const meetings = data.scheduleSection.meetings;
 
   const [currentMeeting, setCurrentMeeting] = useState(-1);

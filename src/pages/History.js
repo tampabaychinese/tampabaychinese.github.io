@@ -10,11 +10,13 @@ const History = (props) => {
   return (
     <div>
       <div className="churchHistoryImageContainer">
-        <div>
+        <div className="historyDescription">
           <h1>{data.title}</h1>
-          {data.body.map((x, _) => (
-            <p>{x}</p>
-          ))}
+          <div>
+            {data.body.map((x, _) => (
+              <p>{x}</p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

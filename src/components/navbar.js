@@ -1,27 +1,22 @@
 import { Link } from "react-router-dom";
 import { FaBars, FaGlobe } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 import HeartLogo from "../assets/heart.jpeg";
-import data from "../data/Header.json";
+import english from "../data/Header.json";
+import chinese from "../data/Header_Chinese.json";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [language, setLanguage] = useState("English");
   const [currentTab, setCurrentTab] = useState("");
+  const data = language === "English" ? english : chinese;
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
-
-  useEffect(() => {
-    if (!window.language) {
-      window.language = "English";
-    }
-    console.log(window.language);
-  }, []);
 
   const createTab = (link, title) => {
     return (
@@ -79,7 +74,7 @@ const Navbar = () => {
                             : "black",
                       }}
                     >
-                      ABOUT US ▾
+                      {data.tabs[0].title} ▾
                     </a>
                   </DropdownMenu.Trigger>
                   <DropdownMenu.Portal>
@@ -125,7 +120,7 @@ const Navbar = () => {
                         className="dropdownItem"
                         onSelect={() => {
                           setLanguage("English");
-                          window.language = "English";
+                          props.onLanguageChange("English");
                         }}
                       >
                         ENGLISH
@@ -134,7 +129,7 @@ const Navbar = () => {
                       <DropdownMenu.Item
                         onSelect={() => {
                           setLanguage("中文版");
-                          window.language = "中文版";
+                          props.onLanguageChange("中文版");
                         }}
                       >
                         中文版

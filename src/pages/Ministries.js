@@ -3,10 +3,13 @@ import React from "react";
 import ExamplePic from "../assets/familyPaster.jpeg";
 import FellowshipCard from "../components/fellowshipCard";
 
-import data from "../data/Ministries.json";
+import english from "../data/Ministries.json";
+import chinese from "../data/Ministries_Chinese.json";
 import "./Ministries.css";
 
-const Ministries = () => {
+const Ministries = (props) => {
+  const data = props.language === "English" ? english : chinese;
+
   const classes = {
     sundaySchool: [
       {

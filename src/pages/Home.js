@@ -3,48 +3,52 @@ import CircleCard from "../components/circleCard";
 import { useState } from "react";
 
 import ContactSection from "../components/contactSection";
-import data from "../data/Home.json";
+import english from "../data/Home.json";
+import chinese from "../data/Home_Chinese.json";
 import "./Home.css";
 
-const Home = () => {
+const Home = (props) => {
+  const data = props.language === "English" ? english : chinese;
   const meetings = data.scheduleSection.meetings;
 
   const [currentMeeting, setCurrentMeeting] = useState(-1);
   const [currentChildMeeting, setCurrentChildMeeting] = useState(-1);
 
-  const renderMeetingDetailsBody = (data, childMeeting = false) => {
+  const renderMeetingDetailsBody = (meeting, childMeeting = false) => {
     return (
       <div>
-        <h4 style={{ textTransform: "uppercase" }}>{data.name}</h4>
-        {data.time !== "TBD" ? (
+        <h4 style={{ textTransform: "uppercase" }}>{meeting.name}</h4>
+        {meeting.time !== "TBD" && meeting.time !== "待定" ? (
           <div>
             <p>
-              {"Every " + data.weekDay + " at "}
-              <b style={{ color: "darkred" }}>{data.time}</b>
+              {props.language === "English"
+                ? "Every " + meeting.weekDay + " at "
+                : "每个" + meeting.weekDay + " "}
+              <b style={{ color: "darkred" }}>{meeting.time}</b>
             </p>
             <p>
               <i>
                 {!childMeeting
-                  ? data.inPerson
-                    ? "On site at church"
-                    : "Online using Zoom"
+                  ? meeting.inPerson
+                    ? data.scheduleSection.onsiteText
+                    : data.scheduleSection.zoomText
                   : null}
               </i>
             </p>
           </div>
         ) : (
           <div>
-            <b style={{ color: "darkred" }}>{data.time}</b>
+            <b style={{ color: "darkred" }}>{meeting.time}</b>
           </div>
         )}
-        <p>{data.details}</p>
-        {data.url ? (
+        <p>{meeting.details}</p>
+        {meeting.url ? (
           <a
-            onClick={() => window.open(data.url)}
+            onClick={() => window.open(meeting.url)}
             className="standardURL"
             style={{ overflowWrap: "break-word" }}
           >
-            {data.url}
+            {meeting.url}
           </a>
         ) : null}
       </div>
@@ -57,9 +61,6 @@ const Home = () => {
         <div>
           <h1>{data.title}</h1>
           <h4>{data.subtitle}</h4>
-          <h4>
-            This is currently placeholder text and a random background image
-          </h4>
         </div>
       </div>
       <div className="meetingsContainer">

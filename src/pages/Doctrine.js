@@ -1,10 +1,13 @@
 import React from "react";
 
 import ReactCardCarousel from "react-card-carousel";
-import data from "../data/Doctrine.json";
+import english from "../data/Doctrine.json";
+import chinese from "../data/Doctrine_Chinese.json";
 import "./Doctrine.css";
 
-const Doctrine = () => {
+const Doctrine = (props) => {
+  const data = props.language === "English" ? english : chinese;
+
   return (
     <div>
       <div className="titleImageContainer">

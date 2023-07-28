@@ -33,8 +33,8 @@
                 "icon": "email"
               },
               {
-                "name": "赶往 (Zoom)",
-                "caption": "Call us for Zoom info",
+                "name": "Zoom",
+                "caption": "請電話聯絡ZOOM info",
                 "subtitle": "",
                 "href": "https://zoom.us/",
                 "icon": "laptop"

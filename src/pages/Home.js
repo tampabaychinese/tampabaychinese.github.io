@@ -14,39 +14,41 @@ const Home = (props) => {
   const [currentMeeting, setCurrentMeeting] = useState(-1);
   const [currentChildMeeting, setCurrentChildMeeting] = useState(-1);
 
-  const renderMeetingDetailsBody = (data, childMeeting = false) => {
+  const renderMeetingDetailsBody = (meeting, childMeeting = false) => {
     return (
       <div>
-        <h4 style={{ textTransform: "uppercase" }}>{data.name}</h4>
-        {data.time !== "TBD" ? (
+        <h4 style={{ textTransform: "uppercase" }}>{meeting.name}</h4>
+        {meeting.time !== "TBD" && meeting.time !== "待定" ? (
           <div>
             <p>
-              {"Every " + data.weekDay + " at "}
-              <b style={{ color: "darkred" }}>{data.time}</b>
+              {props.language === "English"
+                ? "Every " + meeting.weekDay + " at "
+                : "每个" + meeting.weekDay + " "}
+              <b style={{ color: "darkred" }}>{meeting.time}</b>
             </p>
             <p>
               <i>
                 {!childMeeting
-                  ? data.inPerson
-                    ? "On site at church"
-                    : "Online using Zoom"
+                  ? meeting.inPerson
+                    ? data.scheduleSection.onsiteText
+                    : data.scheduleSection.zoomText
                   : null}
               </i>
             </p>
           </div>
         ) : (
           <div>
-            <b style={{ color: "darkred" }}>{data.time}</b>
+            <b style={{ color: "darkred" }}>{meeting.time}</b>
           </div>
         )}
-        <p>{data.details}</p>
-        {data.url ? (
+        <p>{meeting.details}</p>
+        {meeting.url ? (
           <a
-            onClick={() => window.open(data.url)}
+            onClick={() => window.open(meeting.url)}
             className="standardURL"
             style={{ overflowWrap: "break-word" }}
           >
-            {data.url}
+            {meeting.url}
           </a>
         ) : null}
       </div>

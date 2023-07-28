@@ -2,10 +2,11 @@ import React from "react";
 
 import CircleCard from "../components/circleCard";
 import english from "../data/Online.json";
+import chinese from "../data/Online_Chinese.json";
 import "./Online.css";
 
 const Online = (props) => {
-  const data = props.language === "English" ? english : english;
+  const data = props.language === "English" ? english : chinese;
 
   return (
     <div>

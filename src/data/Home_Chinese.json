@@ -2,80 +2,81 @@
     "title": "你們當以基督的心為心.", 
     "subtitle": "腓力比書二章五節", 
     "scheduleSection": {
-        "title": "JOIN US FOR WORSHIP", 
-        "subtitle": "Click for more details", 
+        "title": "加入我們敬拜", 
+        "subtitle": "點擊下面看更多信息", 
+        "onsiteText": "在教會",
+        "zoomText": "通過Zoom進行",
         "meetings": [
             {
-              "name": "Sunday Gathering",
+              "name": "週日聚會",
               "time": "9:30am-1pm",
-              "subtitle": "(Details below)",
+              "subtitle": "(详细信息如下)",
               "weekDay": "星期天",
               "inPerson": true,
               "details": "",
               "childMeetings": [
                 {
-                  "name": "Sunday School",
+                  "name": "主日學",
                   "time": "9:30am-10:30am",
                   "weekDay": "星期天",
                   "subtitle": "",
                   "inPerson": true,
                   "icon": "book",
                   "details":
-                    "We offer 4 different Sunday School classes. Adult, Youth, and English Sunday Schools are from 9:30am-10:30am. Children's Sunday School is from 10:45am-12pm."
+                    "我們提供 4 種不同的主日學課程。成人、青少年和英語主日學的上課時間為上午 9:30 至10:30。兒童主日學的開放時間為上午 10:45 至中午 12 點。"
                 },
                 {
-                  "name": "Sunday Worship",
+                  "name": "主日敬拜",
                   "time": "10:45am-12pm",
-                  "subtitle": "(with online streaming)",
+                  "subtitle": "(同時油管實況轉播)",
                   "weekDay": "星期天",
                   "inPerson": true,
                   "icon": "church",
-                  "details": "Also available on live stream through YouTube",
+                  "details": "油管同步實況轉播:",
                   "url": "https://www.youtube.com/@tcbcchurch727/streams"
                 },
                 {
-                  "name": "Lunch",
+                  "name": "午餐",
                   "time": "12pm-1pm",
                   "subtitle": "",
                   "weekDay": "星期天",
                   "icon": "food",
                   "inPerson": true,
-                  "details": "Join us for lunch!"
+                  "details": "大家一起共進午餐!"
                 }
               ]
             },
             {
               "name": "星期三基要真理班",
               "time": "7:30pm-8:30pm",
-              "subtitle": "(Zoom only)",
+              "subtitle": "(通過Zoom進行)",
               "weekDay": "星期三",
               "inPerson": false,
-              "details": "Please Call for Zoom meeting information.",
+              "details": "請電話聯絡获取Zoom链接信息",
               "childMeetings": []
             },
             {
               "name": "星期五查經班",
               "time": "7:30pm-8:30pm",
-              "subtitle": "(Zoom only)",
+              "subtitle": "(通過Zoom進行)",
               "weekDay": "星期五",
               "inPerson": false,
-              "details": "Please Call for Zoom meeting information.",
+              "details": "請電話聯絡获取Zoom链接信息",
               "childMeetings": []
             },
             {
               "name": "星期六 Sarasota 查經班",
-              "time": "TBD",
+              "time": "待定",
               "subtitle": "",
               "weekDay": "星期六",
               "inPerson": true,
-              "details":
-                "Paused, please join us online on Friday for bible study (using Zoom).",
+              "details": "暫停之中, 請加入我們週五查經班",
               "childMeetings": []
             }
         ]
     }, 
     "contactSection": {
-        "title": "聯絡資訊", 
+        "title": "聯繫方式", 
         "phoneSection": {
             "title": "電話",
             "phone": "(727) 546-3057"

@@ -19,7 +19,6 @@
 }
 
 .containerPic {
-    max-width: 25%;
     object-fit: contain;
     border-radius: 10px;
     display: block;

@@ -16,7 +16,6 @@
 
 .pastorPic {
     margin-right: 50px; 
-    max-width: 25%;
     object-fit: contain;
     border-radius: 15px;
     display: block;

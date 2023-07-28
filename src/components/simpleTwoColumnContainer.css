@@ -1,0 +1,58 @@
+.twoColumnlContainer {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.containerRow {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    text-align: left;
+}
+
+.containerRow p {
+    font-size: 17px; 
+    line-height: 27px;
+}
+
+.containerPic {
+    max-width: 25%;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+    max-width: 35%;
+}
+
+.containerPicMobile {
+    display: none;
+}
+
+.textContainer {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.rowTitle {
+    border-bottom: 5px solid #D7BE69;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 900px) { 
+    .containerPicMobile {
+        display: block;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .containerPic {
+        display: none;
+    }
+}

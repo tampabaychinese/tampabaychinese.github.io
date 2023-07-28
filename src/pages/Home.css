@@ -1,5 +1,5 @@
 .mainImageContainer {
-    background-image: url("../assets/placeholder-image.jpg");
+    background-image: url("../assets/Main\ webpage.JPG");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center; 
@@ -11,6 +11,7 @@
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
+    color: white; 
 }
 
 .meetingsContainer {

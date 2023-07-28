@@ -1,13 +1,3 @@
-.shortImageContainer {
-    background-image: url("../assets/placeholder-image.jpg");
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center; 
-   
-    padding-top: 125px; 
-    padding-bottom: 125px; 
-}
-
 .addressContainer {
   background-color: black;
   color: white; 

@@ -1,4 +1,24 @@
 {
     "title": "MINISTRIES",
-    "subtitle": "TCBC provides Biblical education through all ages. We encourage every Christian to continually and progressively study the word of God so that our spiritual lives will grow together and unite as one in Jesus Christ."
+    "subtitle": "TCBC provides Biblical education through all ages. We encourage every Christian to continually and progressively study the word of God so that our spiritual lives will grow together and unite as one in Jesus Christ.",
+    "ministries": [
+        {
+          "title": "ADULT CHINESE BIBLE STUDY",
+          "description":
+            "All instructions are given according to the sequence of the Books in the Bible, book by book and chapter by chapter. By attending these classes, brothers and sisters learn about God’s justice and mercy which helps build a correct understanding about God and His plan. Only by learning God’s word will we be able to live a life worthy of the gospel and the calling which we have received.",
+          "picture": "../publicAssets/adult chinese bible study.jpg"
+        },
+        {
+          "title": "YOUTH AND CHILDREN BIBLE STUDY",
+          "description":
+            "Teachers of Youths and Children’s Sunday School are dedicated to the teaching of Biblical truths to youths and young children through storytelling, role-playing, hands-on experiences, games or songs. Every individual teacher is well trained and attends Bible Study Class as well as taking part in our church services. We are committed to building the correct foundation by teaching the fundamental truths of God and Christ Jesus",
+          "picture": "../publicAssets/childern youth study.jpg"
+        },
+        {
+          "title": "ENGLISH FELLOWSHIP",
+          "description":
+            "At TCBC, we want to build relationships with people of all walks of life. The English Fellowship is a group that primarily speaks English that serves within the Chinese Church. We welcome all regardless of language and culture. Please join us in our activities and share the joy in the body of Christ.",
+          "picture": "../publicAssets/english fellowship.jpg"
+        }
+      ]
 }

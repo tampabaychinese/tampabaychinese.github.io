@@ -80,3 +80,16 @@ footer {
     color: blue; 
 }
 
+/* containers */
+
+.shortImageContainer {
+    background-image: url("../assets/Main\ webpage\ short.JPG");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center; 
+   
+    padding-top: 125px; 
+    padding-bottom: 125px; 
+    color: white; 
+}
+

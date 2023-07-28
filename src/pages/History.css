@@ -1,5 +1,5 @@
 .churchHistoryImageContainer {
-    background-image: url("../assets/placeholder-image.jpg");
+    background-image: url("../assets/about\ us\ history.JPG");
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center; 
@@ -10,4 +10,16 @@
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
+    color: white; 
+}
+
+.historyDescription {
+    background-color: rgba(0,0,0,.5);
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 2%; 
+    padding-right: 2%;
+    border-radius: 10px;
 }

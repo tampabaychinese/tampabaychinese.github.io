@@ -15,10 +15,10 @@ const Doctrine = (props) => {
       </div>
       <div className="coreBeliefsContainer" data-aos="fade-up">
         <h3>{data.coreBeliefsSection.title}</h3>
-        <div className="mobileCoreBeliefsCard" data-aos="fade-up">
+        <div>
           <p>
             {data.coreBeliefsSection.coreBeliefs.map((x, _) => (
-              <div>
+              <div className="mobileCoreBeliefsCard" data-aos="fade-up">
                 {x} <br />
               </div>
             ))}

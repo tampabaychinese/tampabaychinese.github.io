@@ -1,8 +1,8 @@
 {
     "title": "網絡", 
     "resoursesSection": {
-        "title": "Stay Connected Wherever, Whenever.", 
-        "subtitle": "TCBC offers a variety of online resources so that you can stay connected anywhere, anytime.", 
+        "title": "隨時隨地與我們聯繫", 
+        "subtitle": "TCBC 提供各種在線資源，讓您隨時隨地關注我們", 
         "resources": [
             {
                 "name": "主日敬拜油管實況轉播",
@@ -12,15 +12,15 @@
                 "icon": "youtube"
               },
               {
-                "name": "Sermon & Bible Study Archive",
-                "caption": "通過油管實",
+                "name": "主日敬拜和查經班存檔",
+                "caption": "油管",
                 "subtitle": "",
                 "href": "https://www.youtube.com/@tcbcchurch727/videos",
                 "icon": "youtube"
               },
               {
                 "name": "脸书",
-                "caption": "Get social with us!",
+                "caption": "关注我们",
                 "subtitle": "",
                 "href": "https://www.facebook.com/groups/282579880948/",
                 "icon": "facebook"

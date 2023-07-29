@@ -1,23 +1,23 @@
 {
     "title": "教導事工",
-    "subtitle": "天柏灣華人浸信會為各個年齡段的人提供聖經教育。We encourage every Christian to continually and progressively study the word of God so that our spiritual lives will grow together and unite as one in Jesus Christ.",
+    "subtitle": "天柏灣華人浸信會為各個年齡段的人提供聖經教育。我們鼓勵每一位基督徒不斷地、逐步地​​學習神的話語，以便我們的靈性生命能夠共同成長，並在耶穌基督里合而為一。",
     "ministries": [
         {
-          "title": "ADULT CHINESE BIBLE STUDY",
+          "title": "成人查經班",
           "description":
-            "All instructions are given according to the sequence of the Books in the Bible, book by book and chapter by chapter. By attending these classes, brothers and sisters learn about God’s justice and mercy which helps build a correct understanding about God and His plan. Only by learning God’s word will we be able to live a life worthy of the gospel and the calling which we have received.",
+            "所有課程均按照聖經中各書卷的順序逐本書、逐章講授。通過參加這些課程，弟兄姐妹了解神的公義和憐憫，這有助於正確理解神和他的計劃。只有學習神的話語，我們才能過上對得起福音的生活和我們所接受的呼召。",
           "picture": "../publicAssets/adult chinese bible study.jpg"
         },
         {
-          "title": "YOUTH AND CHILDREN BIBLE STUDY",
+          "title": "青少年和兒童主日學",
           "description":
-            "Teachers of Youths and Children’s Sunday School are dedicated to the teaching of Biblical truths to youths and young children through storytelling, role-playing, hands-on experiences, games or songs. Every individual teacher is well trained and attends Bible Study Class as well as taking part in our church services. We are committed to building the correct foundation by teaching the fundamental truths of God and Christ Jesus",
+            "青少年和兒童主日學的老師致力於通過講故事、角色扮演、實踐體驗、遊戲或歌曲向青少年和幼兒傳授聖經真理。每一位老師都受過良好的培訓，參加聖經學習班並參加我們的教會活動。我們致力於通過教導上帝和基督耶穌的基本真理來讓孩子建立正確的神學基礎。",
           "picture": "../publicAssets/childern youth study.jpg"
         },
         {
-          "title": "ENGLISH FELLOWSHIP",
+          "title": "英語團契",
           "description":
-            "At TCBC, we want to build relationships with people of all walks of life. The English Fellowship is a group that primarily speaks English that serves within the Chinese Church. We welcome all regardless of language and culture. Please join us and our activities and share the joy in the body of Christ.",
+            "在 TCBC，我們希望與各行各業的人們建立關係。英語團契是一個在中國教會內主要講英語的團體。我們歡迎所有人，無論任何語言和文化，請加入我們並參加我們的活動，分享在基督裡的喜樂。",
           "picture": "../publicAssets/english fellowship.jpg"
         }
       ]

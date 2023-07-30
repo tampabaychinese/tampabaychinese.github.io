@@ -4,7 +4,8 @@
     "announcementSection": {
         "title": "ANNOUNCEMENTS", 
         "announcements": [ 
-            
+            "this is a new announcement that needs to be made",
+            "here is a second announcement" 
         ]
     },
     "scheduleSection": {

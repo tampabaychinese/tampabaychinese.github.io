@@ -108,10 +108,25 @@ const Navbar = (props) => {
               <li>{createTab("online", data.tabs[2].title)}</li>
               <li>{createTab("connect", data.tabs[3].title)}</li>
               <li>
-                <DropdownMenu.Root>
+                <button
+                  className="language-toggle"
+                  onClick={() => {
+                    const newLang =
+                      language === "English" ? "中文版" : "English";
+                    setLanguage(newLang);
+                    props.onLanguageChange(newLang);
+                  }}
+                >
+                  <FaGlobe />{" "}
+                  {": " + (language === "English" ? "中文版" : "English")}
+                </button>
+                {/* <DropdownMenu.Root>
                   <DropdownMenu.Trigger asChild>
                     <button className="language-toggle">
-                      <FaGlobe /> {": " + language + "  ▾"}
+                      <FaGlobe />{" "}
+                      {": " +
+                        (language === "English" ? "中文版" : "English") +
+                        "  ▾"}
                     </button>
                   </DropdownMenu.Trigger>
                   <DropdownMenu.Portal>
@@ -136,7 +151,7 @@ const Navbar = (props) => {
                       </DropdownMenu.Item>
                     </DropdownMenu.Content>
                   </DropdownMenu.Portal>
-                </DropdownMenu.Root>
+                </DropdownMenu.Root> */}
               </li>
             </ul>
           </div>

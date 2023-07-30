@@ -54,3 +54,16 @@
     padding-right: 10%; 
     background-color: rgb(224, 224, 224);
 }
+
+.annoucementContainer {
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    padding-left: 10%; 
+    padding-right: 10%; 
+    /* background-color: rgb(234, 234, 234); */
+    background-color: #f7f5ed;
+}
+
+.annoucementContainer p {
+    font-size: 18px; 
+}

@@ -63,6 +63,14 @@ const Home = (props) => {
           <h4>{data.subtitle}</h4>
         </div>
       </div>
+      {data.announcementSection.announcements.length > 0 ? (
+        <div className="annoucementContainer">
+          <h2 data-aos="fade-up">{data.announcementSection.title}</h2>
+          {data.announcementSection.announcements.map((x, _) => (
+            <p data-aos="fade-up">{x}</p>
+          ))}
+        </div>
+      ) : null}
       <div className="meetingsContainer">
         <h2 data-aos="fade-up">{data.scheduleSection.title}</h2>
         <p data-aos="fade-up">

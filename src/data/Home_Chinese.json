@@ -3,6 +3,7 @@
     "subtitle": "腓力比書二章五節", 
     "announcementSection": {
         "title": "通知", 
+        "annoucementButtonTitle": "新通知",
         "announcements": [ 
             
         ]

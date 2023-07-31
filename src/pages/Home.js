@@ -1,6 +1,6 @@
 import React from "react";
 import CircleCard from "../components/circleCard";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import ContactSection from "../components/contactSection";
 import english from "../data/Home.json";
@@ -9,10 +9,17 @@ import "./Home.css";
 
 const Home = (props) => {
   const data = props.language === "English" ? english : chinese;
+  const annoucementRef = useRef(null);
   const meetings = data.scheduleSection.meetings;
 
   const [currentMeeting, setCurrentMeeting] = useState(-1);
   const [currentChildMeeting, setCurrentChildMeeting] = useState(-1);
+
+  const executeScroll = () =>
+    annoucementRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
 
   const renderMeetingDetailsBody = (meeting, childMeeting = false) => {
     return (
@@ -61,10 +68,15 @@ const Home = (props) => {
         <div>
           <h1>{data.title}</h1>
           <h4>{data.subtitle}</h4>
+          {data.announcementSection.announcements.length > 0 ? (
+            <button className="announcementButton" onClick={executeScroll}>
+              {data.announcementSection.annoucementButtonTitle}
+            </button>
+          ) : null}
         </div>
       </div>
       {data.announcementSection.announcements.length > 0 ? (
-        <div className="annoucementContainer">
+        <div className="annoucementContainer" ref={annoucementRef}>
           <h2 data-aos="fade-up">{data.announcementSection.title}</h2>
           {data.announcementSection.announcements.map((x, _) => (
             <p data-aos="fade-up">{x}</p>

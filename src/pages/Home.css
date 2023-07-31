@@ -62,8 +62,36 @@
     padding-right: 10%; 
     /* background-color: rgb(234, 234, 234); */
     background-color: #f7f5ed;
+    scroll-margin-top: 50px;
 }
 
 .annoucementContainer p {
     font-size: 18px; 
+}
+
+.announcementButton {
+    background-color: #D7BE69;
+    border-radius: 50px;
+    color:white; 
+    border: none; 
+    padding: 15px;
+    margin-top: 10px; 
+    padding-left: 40px; 
+    padding-right: 40px; 
+    font-weight: 600;
+    min-height: 20px;
+    min-width: 210px;
+    font-size:16px; 
+    text-decoration: none;
+    transition: all 0.7s;
+}
+
+.announcementButton:hover {
+    background-color: goldenrod;
+}
+
+@media (max-width: 500px) { 
+    .announcementButton {
+        transform: scale(0.8);
+    }
 }

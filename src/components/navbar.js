@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaBars, FaGlobe } from "react-icons/fa";
+import { FaBars, FaGlobe, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
@@ -55,7 +55,7 @@ const Navbar = (props) => {
             </Link>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
-            <FaBars />
+            {showNavbar ? <FaTimes /> : <FaBars />}
           </div>
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>

@@ -26,7 +26,6 @@ const Online = (props) => {
               caption={x.caption}
               subtitle={x.subtitle}
               inPerson={false}
-              href="#"
               icon={x.icon}
               color="#d1b75e"
               onClick={() => {

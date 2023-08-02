@@ -1,6 +1,7 @@
 import React from "react";
 import CircleCard from "../components/circleCard";
-import { useState, useRef } from "react";
+import { useState } from "react";
+import $ from "jquery";
 
 import ContactSection from "../components/contactSection";
 import english from "../data/Home.json";
@@ -9,17 +10,29 @@ import "./Home.css";
 
 const Home = (props) => {
   const data = props.language === "English" ? english : chinese;
-  const annoucementRef = useRef(null);
   const meetings = data.scheduleSection.meetings;
 
   const [currentMeeting, setCurrentMeeting] = useState(-1);
   const [currentChildMeeting, setCurrentChildMeeting] = useState(-1);
 
-  const executeScroll = () =>
-    annoucementRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+  $.fn.isOnScreen = (ref) => {
+    const rect = $(ref)[0].getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.right <= window.innerWidth &&
+      rect.bottom <= window.innerHeight
+    );
+  };
+
+  const executeScroll = (ref, forceScroll = false) => {
+    setTimeout(function () {
+      if (!$(ref).isOnScreen(ref) || forceScroll) {
+        const y = $(ref).offset().top;
+        window.scrollTo({ top: y - 80, behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   const renderMeetingDetailsBody = (meeting, childMeeting = false) => {
     return (
@@ -69,14 +82,19 @@ const Home = (props) => {
           <h1>{data.title}</h1>
           <h4>{data.subtitle}</h4>
           {data.announcementSection.announcements.length > 0 ? (
-            <button className="announcementButton" onClick={executeScroll}>
+            <button
+              className="announcementButton"
+              onClick={() => {
+                executeScroll("#annoucements", true);
+              }}
+            >
               {data.announcementSection.annoucementButtonTitle}
             </button>
           ) : null}
         </div>
       </div>
       {data.announcementSection.announcements.length > 0 ? (
-        <div className="annoucementContainer" ref={annoucementRef}>
+        <div className="annoucementContainer" id="annoucements">
           <h2 data-aos="fade-up">{data.announcementSection.title}</h2>
           {data.announcementSection.announcements.map((x, _) => (
             <p data-aos="fade-up">{x}</p>
@@ -94,7 +112,6 @@ const Home = (props) => {
             caption={x.time}
             subtitle={x.subtitle}
             icon={x.inPerson ? "church" : "laptop"}
-            href="#meetingDetails"
             onClick={() => {
               if (
                 currentMeeting >= 0 &&
@@ -103,11 +120,14 @@ const Home = (props) => {
                 setCurrentChildMeeting(-1);
               }
               setCurrentMeeting(i);
+              executeScroll("#meetingDetails");
             }}
           />
         ))}
       </div>
-      {currentMeeting === -1 ? null : (
+      {currentMeeting === -1 ? (
+        <div id="meetingDetails"></div>
+      ) : (
         <div className="meetingDetailsContainer" id="meetingDetails">
           <div data-aos="fade-up">
             {renderMeetingDetailsBody(meetings[currentMeeting])}
@@ -120,20 +140,18 @@ const Home = (props) => {
                     caption={x.time}
                     subtitle={x.subtitle}
                     icon={x.icon}
-                    href="#childMeetingDetails"
                     color={"#8B0000"}
                     subColor={"#DEB54D"}
                     onClick={() => {
                       setCurrentChildMeeting(i);
+                      executeScroll("#childMeetingDetails");
                     }}
                   />
                 ))}
-                {currentChildMeeting === -1 ? null : (
-                  <div
-                    id="childMeetingDetails"
-                    className="childMeetingDetails"
-                    data-aos="fade-up"
-                  >
+                {currentChildMeeting === -1 ? (
+                  <div id="childMeetingDetails"></div>
+                ) : (
+                  <div id="childMeetingDetails" className="childMeetingDetails">
                     {renderMeetingDetailsBody(
                       meetings[currentMeeting].childMeetings[
                         currentChildMeeting

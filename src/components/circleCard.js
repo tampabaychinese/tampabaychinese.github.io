@@ -14,7 +14,6 @@ const CircleCard = (props) => {
     <div className="meetingCardContainer" data-aos="fade-up">
       <a
         className="meetingCircle"
-        href={props.href}
         onClick={() => {
           props.onClick();
         }}

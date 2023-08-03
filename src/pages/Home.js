@@ -38,7 +38,9 @@ const Home = (props) => {
     return (
       <div>
         <h4 style={{ textTransform: "uppercase" }}>{meeting.name}</h4>
-        {meeting.time !== "TBD" && meeting.time !== "待定" ? (
+        {meeting.time !== "TBD" &&
+        meeting.time !== "待定" &&
+        meeting.weekly === true ? (
           <div>
             <p>
               {props.language === "English"

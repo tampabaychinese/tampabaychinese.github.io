@@ -19,6 +19,7 @@
               "time": "9:30am-1pm",
               "subtitle": "(Details below)",
               "weekDay": "Sunday",
+              "weekly": true,
               "inPerson": true,
               "details": "",
               "childMeetings": [
@@ -26,6 +27,7 @@
                   "name": "Sunday School",
                   "time": "9:30am-10:30am",
                   "weekDay": "Sunday",
+                  "weekly": true,
                   "subtitle": "",
                   "inPerson": true,
                   "icon": "book",
@@ -37,6 +39,7 @@
                   "time": "10:45am-12pm",
                   "subtitle": "(with online streaming)",
                   "weekDay": "Sunday",
+                  "weekly": true,
                   "inPerson": true,
                   "icon": "church",
                   "details": "Also available on live stream through YouTube",
@@ -47,6 +50,7 @@
                   "time": "12pm-1pm",
                   "subtitle": "",
                   "weekDay": "Sunday",
+                  "weekly": true,
                   "icon": "food",
                   "inPerson": true,
                   "details": "Join us for lunch!"
@@ -58,6 +62,7 @@
               "time": "7:30pm-8:30pm",
               "subtitle": "(Zoom only)",
               "weekDay": "Wednesday",
+              "weekly": true,
               "inPerson": false,
               "details": "Please Call for Zoom meeting information.",
               "childMeetings": []
@@ -67,6 +72,7 @@
               "time": "7:30pm-8:30pm",
               "subtitle": "(Zoom only)",
               "weekDay": "Friday",
+              "weekly": true,
               "inPerson": false,
               "details": "Please Call for Zoom meeting information.",
               "childMeetings": []
@@ -76,6 +82,7 @@
               "time": "TBD",
               "subtitle": "",
               "weekDay": "Saturday",
+              "weekly": false,
               "inPerson": true,
               "details":
                 "Paused, please join us online on Friday for bible study (using Zoom).",

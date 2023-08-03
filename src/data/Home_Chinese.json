@@ -19,6 +19,7 @@
               "time": "9:30am-1pm",
               "subtitle": "(详细信息如下)",
               "weekDay": "星期天",
+              "weekly": true,
               "inPerson": true,
               "details": "",
               "childMeetings": [
@@ -26,6 +27,7 @@
                   "name": "主日學",
                   "time": "9:30am-10:30am",
                   "weekDay": "星期天",
+                  "weekly": true,
                   "subtitle": "",
                   "inPerson": true,
                   "icon": "book",
@@ -37,6 +39,7 @@
                   "time": "10:45am-12pm",
                   "subtitle": "(同時油管實況轉播)",
                   "weekDay": "星期天",
+                  "weekly": true,
                   "inPerson": true,
                   "icon": "church",
                   "details": "油管同步實況轉播:",
@@ -47,6 +50,7 @@
                   "time": "12pm-1pm",
                   "subtitle": "",
                   "weekDay": "星期天",
+                  "weekly": true,
                   "icon": "food",
                   "inPerson": true,
                   "details": "大家一起共進午餐!"
@@ -58,6 +62,7 @@
               "time": "7:30pm-8:30pm",
               "subtitle": "(通過Zoom進行)",
               "weekDay": "星期三",
+              "weekly": true,
               "inPerson": false,
               "details": "請電話聯絡获取Zoom链接信息",
               "childMeetings": []
@@ -67,6 +72,7 @@
               "time": "7:30pm-8:30pm",
               "subtitle": "(通過Zoom進行)",
               "weekDay": "星期五",
+              "weekly": true,
               "inPerson": false,
               "details": "請電話聯絡获取Zoom链接信息",
               "childMeetings": []
@@ -76,6 +82,7 @@
               "time": "待定",
               "subtitle": "",
               "weekDay": "星期六",
+              "weekly": false,
               "inPerson": true,
               "details": "暫停之中, 請加入我們週五查經班",
               "childMeetings": []

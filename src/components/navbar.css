@@ -64,9 +64,6 @@
 .logo {
     font-weight: 900;
     font-size: 18px; 
-    justify-content: center;
-    display: flex;
-    align-items: center;
 }
 
 .language-toggle {
@@ -86,7 +83,10 @@
 
 .tcbc-title {
     text-decoration: none;
-    color: black; 
+    color: black;
+    justify-content: center;
+    display: flex;
+    align-items: center; 
 }
 
 .heart-img {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaBars, FaGlobe, FaTimes } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 import HeartLogo from "../assets/heart.jpeg";
@@ -12,11 +12,24 @@ const Navbar = (props) => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [language, setLanguage] = useState("English");
   const [currentTab, setCurrentTab] = useState("");
+  const ref = useRef();
   const data = language === "English" ? english : chinese;
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setShowNavbar(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
 
   const createTab = (link, title) => {
     return (
@@ -42,22 +55,23 @@ const Navbar = (props) => {
       <nav className="navbar">
         <div className="container">
           <div className="logo">
-            <img src={HeartLogo} className="heart-img" alt="logo" />
             <Link
               to="/"
               className="tcbc-title"
               onClick={() => {
                 window.scrollTo(0, 0);
                 setCurrentTab("");
+                setShowNavbar(false);
               }}
             >
+              <img src={HeartLogo} className="heart-img" alt="logo" />
               {data.title}
             </Link>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             {showNavbar ? <FaTimes /> : <FaBars />}
           </div>
-          <div className={`nav-elements  ${showNavbar && "active"}`}>
+          <div className={`nav-elements  ${showNavbar && "active"}`} ref={ref}>
             <ul>
               <li className="aboutDropdown">
                 <DropdownMenu.Root>
@@ -120,38 +134,6 @@ const Navbar = (props) => {
                   <FaGlobe />{" "}
                   {": " + (language === "English" ? "中文版" : "English")}
                 </button>
-                {/* <DropdownMenu.Root>
-                  <DropdownMenu.Trigger asChild>
-                    <button className="language-toggle">
-                      <FaGlobe />{" "}
-                      {": " +
-                        (language === "English" ? "中文版" : "English") +
-                        "  ▾"}
-                    </button>
-                  </DropdownMenu.Trigger>
-                  <DropdownMenu.Portal>
-                    <DropdownMenu.Content className="dropdownContent">
-                      <DropdownMenu.Item
-                        className="dropdownItem"
-                        onSelect={() => {
-                          setLanguage("English");
-                          props.onLanguageChange("English");
-                        }}
-                      >
-                        ENGLISH
-                      </DropdownMenu.Item>
-                      <hr class="dashed"></hr>
-                      <DropdownMenu.Item
-                        onSelect={() => {
-                          setLanguage("中文版");
-                          props.onLanguageChange("中文版");
-                        }}
-                      >
-                        中文版
-                      </DropdownMenu.Item>
-                    </DropdownMenu.Content>
-                  </DropdownMenu.Portal>
-                </DropdownMenu.Root> */}
               </li>
             </ul>
           </div>

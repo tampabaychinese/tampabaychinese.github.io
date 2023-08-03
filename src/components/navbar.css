@@ -170,8 +170,9 @@
   .menu-icon {
     display: block;
     cursor: pointer;
-    padding-left: 20px; 
-    height: 85px; 
+    /* padding-left: 20px;  */
+    /* height: 85px;  */
+    margin-left: 20px; 
     justify-content: center;
     display: flex;
     align-items: center;
